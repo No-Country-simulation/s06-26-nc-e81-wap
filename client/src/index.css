@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #888888;
+  --color-primary-hover: #aaaaaa;
+  --color-bg: #151515;
+  --color-bg-secondary: #1a1a1a;
+  --color-surface: #222222;
+  --color-text: #ffffff;
+  --color-text-secondary: #999999;
+  --color-border: #222222;
+  --color-accent: #888888;
+  --font-heading: "Lato", sans-serif;
+  --font-body: ui-sans-serif, sans-serif;
+}
+
+:root {
+  --background: #151515;
+  --foreground: #ffffff;
+  --card: #1a1a1a;
+  --card-foreground: #ffffff;
+  --popover: #1a1a1a;
+  --popover-foreground: #ffffff;
+  --primary: #888888;
+  --primary-foreground: #151515;
+  --secondary: #222222;
+  --secondary-foreground: #ffffff;
+  --muted: #222222;
+  --muted-foreground: #999999;
+  --accent: #888888;
+  --accent-foreground: #151515;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #222222;
+  --input: #222222;
+  --ring: #888888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}

@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "App BiT",
+    "tagline": "Seu ecossistema de orientação pessoal"
+  },
+  "nav": {
+    "dashboard": "Painel",
+    "formacion": "Formação",
+    "empleabilidad": "Empregabilidade",
+    "experiencias": "Experiências",
+    "mentorias": "Mentorias",
+    "salud-mental": "Saúde Mental"
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Criar conta",
+    "email": "E-mail",
+    "password": "Senha",
+    "onboarding": "Completar perfil"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "search": "Pesquisar"
+  }
+}

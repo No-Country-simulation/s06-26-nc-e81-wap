@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "App BiT",
+    "tagline": "Your personal orientation ecosystem"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "formacion": "Training",
+    "empleabilidad": "Job Opportunities",
+    "experiencias": "Experiences",
+    "mentorias": "Mentorship",
+    "salud-mental": "Mental Health"
+  },
+  "auth": {
+    "login": "Sign In",
+    "register": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "onboarding": "Complete Profile"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "search": "Search"
+  }
+}
