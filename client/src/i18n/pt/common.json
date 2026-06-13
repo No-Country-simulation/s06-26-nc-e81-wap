@@ -3,6 +3,9 @@
     "name": "App BiT",
     "tagline": "Seu ecossistema de orientação pessoal"
   },
+  "dashboard": {
+    "welcome": "Bem-vindo ao App BiT. Explore as seções do menu para acessar formação, empregabilidade, experiências, mentorias e saúde mental."
+  },
   "nav": {
     "dashboard": "Painel",
     "formacion": "Formação",
@@ -18,12 +21,19 @@
     "password": "Senha",
     "onboarding": "Completar perfil"
   },
+  "theme": {
+    "dark": "Escuro",
+    "light": "Claro"
+  },
   "common": {
     "loading": "Carregando...",
     "error": "Ocorreu um erro",
     "save": "Salvar",
     "cancel": "Cancelar",
     "delete": "Excluir",
-    "search": "Pesquisar"
+    "search": "Pesquisar",
+    "search-placeholder": "Pesquisar na plataforma...",
+    "logout": "Sair",
+    "profile": "Perfil"
   }
 }
