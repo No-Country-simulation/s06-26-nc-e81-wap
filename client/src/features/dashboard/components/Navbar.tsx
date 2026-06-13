@@ -17,8 +17,8 @@ import { cn } from "@/shared/utils/cn";
 import { changeLanguage } from "@/i18n";
 import { useTheme } from "@/shared/hooks/useTheme";
 import { useAuthStore } from "@/store/auth.store";
-import { Sidebar } from "./Sidebar";
-import { navItems } from "./nav-items";
+import { Sidebar } from "@/features/dashboard/components/Sidebar";
+import { navItems } from "@/features/dashboard/constants/nav-items";
 
 const languages = [
   { code: "es", label: "ES" },

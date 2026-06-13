@@ -3,8 +3,8 @@ import { Outlet } from 'react-router-dom'
 import { PanelLeftClose, PanelLeftOpen } from 'lucide-react'
 
 import { cn } from '@/shared/utils/cn'
-import { Sidebar } from './Sidebar'
-import { Navbar } from './Navbar'
+import { Sidebar } from '@/features/dashboard/components/Sidebar'
+import { Navbar } from '@/features/dashboard/components/Navbar'
 
 export function DashboardLayout() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
