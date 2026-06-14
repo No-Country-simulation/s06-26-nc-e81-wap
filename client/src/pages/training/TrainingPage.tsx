@@ -1,11 +1,16 @@
-import { useTranslation } from 'react-i18next'
+import { HeroSection } from './components/HeroSection';
+import { CourseCatalog } from './components/CourseCatalog';
+import { StudyMaterials } from './components/StudyMaterials';
+import './TrainingPage.css';
 
-export function TrainingPage() {
-  const { t } = useTranslation()
+export const TrainingPage = () => {
   return (
-    <main style={{ padding: '2rem' }}>
-      <h1>{t('nav.formacion')}</h1>
-      <p style={{ color: '#999' }}>Placeholder — Dev 2</p>
-    </main>
-  )
-}
+    <div className="training-page">
+      <div className="training-content">
+        <HeroSection />
+        <CourseCatalog />
+        <StudyMaterials />
+      </div>
+    </div>
+  );
+};
