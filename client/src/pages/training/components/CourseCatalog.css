@@ -1,0 +1,67 @@
+.catalog-section {
+  margin-bottom: 48px;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+.catalog-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.catalog-subtitle {
+  color: #45464d;
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+  padding: 4px;
+  background-color: #f2f4f6;
+  border-radius: 8px;
+}
+
+.filter-btn {
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #45464d;
+}
+
+.filter-btn.active {
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #000000;
+}
+
+.filter-btn:hover:not(.active) {
+  background-color: #e0e3e5;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .catalog-header {
+    flex-direction: column;
+  }
+}
