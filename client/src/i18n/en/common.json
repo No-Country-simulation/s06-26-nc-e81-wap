@@ -3,6 +3,9 @@
     "name": "App BiT",
     "tagline": "Your personal orientation ecosystem"
   },
+  "dashboard": {
+    "welcome": "Welcome to App BiT. Explore the menu sections to access training, employability, experiences, mentorship and mental health."
+  },
   "nav": {
     "dashboard": "Dashboard",
     "formacion": "Training",
@@ -18,12 +21,19 @@
     "password": "Password",
     "onboarding": "Complete Profile"
   },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  },
   "common": {
     "loading": "Loading...",
     "error": "An error occurred",
     "save": "Save",
     "cancel": "Cancel",
     "delete": "Delete",
-    "search": "Search"
+    "search": "Search",
+    "search-placeholder": "Search the platform...",
+    "logout": "Log out",
+    "profile": "Profile"
   }
 }

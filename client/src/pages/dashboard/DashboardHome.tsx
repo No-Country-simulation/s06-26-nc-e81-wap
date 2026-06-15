@@ -11,8 +11,7 @@ export function DashboardHome() {
           {t('app.tagline')}
         </h2>
         <p className="mt-2 text-sm text-text-secondary">
-          Bienvenido a App BiT. Explora las secciones del menú para acceder a
-          formación, empleabilidad, experiencias, mentorías y salud mental.
+          {t('dashboard.welcome')}
         </p>
       </Card>
     </div>
