@@ -91,10 +91,10 @@ export function Sidebar({ collapsed }: { collapsed?: boolean }) {
               </Avatar>
               {!collapsed && (
                 <div className="flex flex-1 flex-col items-start text-left">
-                  <span className="text-sm font-medium text-text truncate max-w-[140px]">
+                  <span className="text-sm font-medium text-text truncate max-w-35">
                     {user?.nombre ?? "Usuario"}
                   </span>
-                  <span className="text-xs text-text-secondary truncate max-w-[140px]">
+                  <span className="text-xs text-text-secondary truncate max-w-35">
                     {user?.email ?? ""}
                   </span>
                 </div>

@@ -35,5 +35,35 @@
     "search-placeholder": "Search the platform...",
     "logout": "Log out",
     "profile": "Profile"
+  },
+  "training": {
+    "currentPath": "Current Path",
+    "courseTitle": "Advanced Distributed Systems",
+    "courseDescription": "Continue where you left off: 'Eventual Consistency in High-Scale Architectures'.",
+    "completed": "Completed",
+    "modules": "Modules",
+    "resumeLearning": "Resume Learning",
+    "learningActivity": "Learning Activity",
+    "dailyStreak": "Daily Streak",
+    "days": "Days",
+    "timeLearning": "Study Time",
+    "hours": "hours",
+    "badgesEarned": "Badges Earned",
+    "viewStats": "View Detailed Stats",
+    "catalogTitle": "Course Catalog",
+    "catalogSubtitle": "Explore specialized engineering paths curated for your profile.",
+    "filters": {
+      "all": "All Paths",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "architecture": "Architecture"
+    },
+    "beginnerFriendly": "BEGINNER FRIENDLY",
+    "studyMaterials": "Study Materials",
+    "upcomingWorkshops": "Upcoming Live Workshops",
+    "workshops": {
+      "attendees": "+{{count}} Attendees"
+    },
+    "viewAllEvents": "View All Events"
   }
 }

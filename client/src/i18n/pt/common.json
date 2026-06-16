@@ -35,5 +35,35 @@
     "search-placeholder": "Pesquisar na plataforma...",
     "logout": "Sair",
     "profile": "Perfil"
+  },
+  "training": {
+    "currentPath": "Rota Atual",
+    "courseTitle": "Sistemas Distribuídos Avançados",
+    "courseDescription": "Continue de onde parou: 'Consistência Eventual em Arquiteturas de Alta Escala'.",
+    "completed": "Concluído",
+    "modules": "Módulos",
+    "resumeLearning": "Retomar Aprendizado",
+    "learningActivity": "Atividade de Aprendizagem",
+    "dailyStreak": "Sequência Diária",
+    "days": "Dias",
+    "timeLearning": "Tempo de Estudo",
+    "hours": "horas",
+    "badgesEarned": "Distintivos Obtidos",
+    "viewStats": "Ver Estatísticas Detalhadas",
+    "catalogTitle": "Catálogo de Cursos",
+    "catalogSubtitle": "Explore rotas de engenharia especializadas selecionadas para seu perfil.",
+    "filters": {
+      "all": "Todas as Rotas",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "architecture": "Arquitetura"
+    },
+    "beginnerFriendly": "PARA INICIANTES",
+    "studyMaterials": "Materiais de Estudo",
+    "upcomingWorkshops": "Próximos Workshops ao Vivo",
+    "workshops": {
+      "attendees": "+{{count}} Participantes"
+    },
+    "viewAllEvents": "Ver Todos os Eventos"
   }
 }

@@ -1,4 +1,3 @@
-
 {
   "app": {
     "name": "App BiT",
@@ -32,7 +31,10 @@
     "save": "Guardar",
     "cancel": "Cancelar",
     "delete": "Eliminar",
-    "search": "Buscar"
+    "search": "Buscar",
+    "search-placeholder": "Busca en la plataforma...",
+    "logout": "Cerrar sesión",
+    "profile": "Perfil"
   },
   "training": {
     "currentPath": "Ruta Actual",
@@ -56,45 +58,10 @@
       "devops": "DevOps",
       "architecture": "Arquitectura"
     },
-    "courses": {
-      "infrastructure": {
-        "title": "Infraestructura como Código",
-        "description": "Domina Terraform y Ansible para aprovisionamiento automatizado en la nube en AWS y GCP.",
-        "tag": "KUBERNETES"
-      },
-      "concurrency": {
-        "title": "Patrones de Concurrencia",
-        "description": "Profundiza en asyncio, threading y multiprocesamiento para Python de alto rendimiento.",
-        "tag": "PYTHON"
-      },
-      "defensive": {
-        "title": "Codificación Defensiva",
-        "description": "Implementación de estándares OWASP y escaneo de seguridad automatizado en pipelines CI/CD.",
-        "tag": "SEGURIDAD"
-      }
-    },
     "beginnerFriendly": "PARA PRINCIPIANTES",
     "studyMaterials": "Materiales de Estudio",
-    "materials": {
-      "guide": "Guía_Sistemas_Distribuidos.pdf",
-      "guideSize": "PDF • 12.4 MB",
-      "exercises": "Ejercicios_Prácticos_Vol3.zip",
-      "exercisesSize": "Archivo • 45.0 MB",
-      "video": "Archivo_Conferencias_2023.mp4",
-      "videoSize": "Video • 1.2 GB"
-    },
     "upcomingWorkshops": "Próximos Talleres en Vivo",
     "workshops": {
-      "database": {
-        "title": "Q&A: Optimización de Consultas en Base de Datos",
-        "description": "Únete a la Ingeniera Principal Sarah Chen para una inmersión profunda en la optimización de rendimiento de Postgres.",
-        "time": "MAÑANA • 14:00 GMT"
-      },
-      "networking": {
-        "title": "Taller: Redes de Confianza Cero",
-        "description": "Una sesión práctica sobre la implementación de perímetros de red seguros en entornos de nube.",
-        "time": "JUEVES • 10:00 GMT"
-      },
       "attendees": "+{{count}} Asistentes"
     },
     "viewAllEvents": "Ver Todos los Eventos"
