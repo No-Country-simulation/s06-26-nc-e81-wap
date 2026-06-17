@@ -4,7 +4,40 @@
     "tagline": "Your personal orientation ecosystem"
   },
   "dashboard": {
-    "welcome": "Welcome to App BiT. Explore the menu sections to access training, employability, experiences, mentorship and mental health."
+    "welcome": "Welcome to App BiT. Explore the menu sections to access training, employability, experiences, mentorship and mental health.",
+    "greeting": "{{name}}'s Dashboard",
+    "subtitle": "Here's a summary of your activity on the platform.",
+    "defaultName": "User",
+    "error": "Error loading dashboard",
+    "retry": "Retry",
+    "noHighlight": "No upcoming experiences yet.",
+    "exploreExperiences": "Explore experiences",
+    "highlightTag": "Upcoming activity",
+    "daysRemaining": "{{count}} days remaining",
+    "noWidgetData": "No data available yet.",
+    "lists": {
+      "empleabilidad": "Active applications",
+      "formacion": "Completed courses",
+      "mentorias": "Upcoming mentorships",
+      "viewAll": "View all",
+      "empty": "No data available yet."
+    },
+    "extra": {
+      "codewars": "Challenge",
+      "openCodewars": "Go to Codewars",
+      "codewarsPrompt": "Feeling up for a challenge?",
+      "quoteOfTheDay": "Quote of the day",
+      "streak": "Streak",
+      "streakCount_one": "{{count}} day streak",
+      "streakCount_other": "{{count}} day streak"
+    },
+    "cta": {
+      "formacion": "Go to training",
+      "empleabilidad": "View applications",
+      "experiencias": "View details",
+      "mentorias": "Schedule mentorship",
+      "salud-mental": "Check in"
+    }
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -64,6 +97,7 @@
     "workshops": {
       "attendees": "+{{count}} Attendees"
     },
+    "noCourses": "No courses available in this category.",
     "viewAllEvents": "View All Events"
   }
 }

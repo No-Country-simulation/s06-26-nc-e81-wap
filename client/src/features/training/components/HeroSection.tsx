@@ -1,13 +1,42 @@
 import { useTranslation } from "react-i18next";
 import { Flame, Clock, Award, ArrowRight } from "lucide-react";
-import type { ProgressData } from "@/features/training/types/training.types";
+import { Skeleton } from "@/shared/ui/Skeleton";
+import type { HeroSectionProps } from "@/features/training/types/training.types";
 
-type HeroSectionProps = {
-  progress: ProgressData | null;
-};
-
-export function HeroSection({ progress }: HeroSectionProps) {
+export function HeroSection({ progress, isLoading }: HeroSectionProps) {
   const { t } = useTranslation();
+
+  if (isLoading) {
+    return (
+      <section className="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-[2fr_1fr]">
+        <div className="flex min-h-70 flex-col justify-between rounded-xl bg-surface p-8">
+          <div className="space-y-4">
+            <Skeleton className="h-5 w-28" />
+            <Skeleton className="h-9 w-3/4" />
+            <Skeleton className="h-5 w-full" />
+            <Skeleton className="h-5 w-2/3" />
+          </div>
+          <div className="space-y-3">
+            <Skeleton className="h-4 w-full" />
+            <Skeleton className="h-10 w-36" />
+          </div>
+        </div>
+        <div className="flex flex-col gap-6 rounded-xl border border-border bg-surface/80 p-6">
+          <Skeleton className="h-6 w-40" />
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div key={i} className="flex items-center gap-4">
+              <Skeleton className="h-10 w-10 rounded-lg" />
+              <div className="flex-1 space-y-1">
+                <Skeleton className="h-3 w-20" />
+                <Skeleton className="h-5 w-24" />
+              </div>
+            </div>
+          ))}
+          <Skeleton className="mt-auto h-4 w-28" />
+        </div>
+      </section>
+    )
+  }
 
   if (!progress) return null;
 

@@ -20,11 +20,7 @@ import { useAuthStore } from "@/store/auth.store";
 import { Sidebar } from "@/features/dashboard/components/Sidebar";
 import { navItems } from "@/features/dashboard/constants/nav-items";
 
-const languages = [
-  { code: "es", label: "ES" },
-  { code: "pt", label: "PT" },
-  { code: "en", label: "EN" },
-] as const;
+import { languages } from "@/features/dashboard/constants";
 
 export function Navbar() {
   const { t, i18n } = useTranslation();
