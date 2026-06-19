@@ -1,0 +1,276 @@
+.analytics-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.analytics-main {
+  background-color: #ffffff;
+  border: 1px solid #c6c6cd;
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-header {
+  padding: 24px;
+  border-bottom: 1px solid #c6c6cd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+.analytics-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #45464d;
+  margin: 0;
+}
+
+.analytics-edit {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #006a66;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.analytics-edit .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 24px;
+}
+
+.analytics-card {
+  padding: 16px;
+  background-color: #f2f4f6;
+  border: 1px solid #c6c6cd;
+}
+
+.analytics-card-label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #45464d;
+  margin: 0 0 4px 0;
+}
+
+.analytics-card-value {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+.analytics-improvements {
+  padding: 0 24px 24px 24px;
+}
+
+.improvements-title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #45464d;
+  margin: 0 0 16px 0;
+}
+
+.improvement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.improvement-item.error {
+  background-color: rgba(255, 218, 214, 0.2);
+  border-left: 4px solid #ba1a1a;
+}
+
+.improvement-item.info {
+  background-color: #f2f4f6;
+  border-left: 4px solid #76777d;
+}
+
+.improvement-item .material-symbols-outlined {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.improvement-item.error .material-symbols-outlined {
+  color: #ba1a1a;
+}
+
+.improvement-item.info .material-symbols-outlined {
+  color: #45464d;
+}
+
+.improvement-label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.improvement-item.error .improvement-label {
+  color: #93000a;
+}
+
+.improvement-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #45464d;
+  margin: 0;
+}
+
+.analytics-sidebar {
+  background-color: #ffffff;
+  border: 1px solid #c6c6cd;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 24px;
+  border-bottom: 1px solid #c6c6cd;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+.applications-list {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 8px;
+}
+
+.application-item {
+  padding: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  margin-bottom: 4px;
+}
+
+.application-item:hover {
+  background-color: #f2f4f6;
+  border-color: #c6c6cd;
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.application-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.application-company {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #45464d;
+  margin: 0;
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-badge.interview {
+  background-color: #81f2eb;
+  color: #006a66;
+}
+
+.status-badge.applied {
+  background-color: #e0e3e5;
+  color: #45464d;
+}
+
+.status-badge.closed {
+  background-color: #ffdad6;
+  color: #93000a;
+}
+
+.application-date {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #45464d;
+  margin: 0;
+}
+
+.sidebar-footer {
+  padding: 16px;
+  border-top: 1px solid #c6c6cd;
+}
+
+.view-all-btn {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-all-btn:hover {
+  background-color: #eceef0;
+}
+
+@media (max-width: 1024px) {
+  .analytics-section {
+    grid-template-columns: 1fr;
+  }
+}

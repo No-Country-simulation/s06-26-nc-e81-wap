@@ -19,8 +19,8 @@ export default function App() {
         <Route path="/onboarding" element={<OnboardingPage />} />
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<DashboardHome />} />
-          <Route path="formacion" element={<TrainingPage />} />
           <Route path="empleabilidad" element={<EmployabilityPage />} />
+          <Route path="formacion" element={<TrainingPage />} />
           <Route path="experiencias" element={<ExperiencesPage />} />
           <Route path="mentorias" element={<MentorshipPage />} />
           <Route path="salud-mental" element={<MentalHealthPage />} />

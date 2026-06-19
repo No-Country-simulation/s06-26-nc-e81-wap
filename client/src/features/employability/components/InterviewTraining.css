@@ -1,0 +1,154 @@
+.training-section {
+  margin-bottom: 24px;
+}
+
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.training-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin: 0;
+}
+
+.training-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #45464d;
+  margin: 0;
+}
+
+.explore-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  border: 1px solid #76777d;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.explore-btn:hover {
+  background-color: #eceef0;
+}
+
+.explore-btn .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.training-card {
+  background-color: #ffffff;
+  border: 1px solid #c6c6cd;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.training-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.training-image-container {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.training-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.training-card:hover .training-image {
+  transform: scale(1.05);
+}
+
+.training-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.training-content {
+  padding: 24px;
+}
+
+.training-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+.training-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #45464d;
+  margin: 0 0 16px 0;
+}
+
+.training-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.training-meta {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #006a66;
+}
+
+.training-play {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #45464d;
+  transition: color 0.2s;
+}
+
+.training-play:hover {
+  color: #000000;
+}
+
+.training-play .material-symbols-outlined {
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+}

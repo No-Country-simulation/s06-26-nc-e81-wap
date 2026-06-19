@@ -1,0 +1,83 @@
+/* features/employability/components/Footer.css */
+.employability-footer {
+  margin-top: 48px;
+  padding: 24px;
+  border-top: 1px solid #c6c6cd;
+  background-color: #f2f4f6;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.footer-title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-list li a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #45464d;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-list li a:hover {
+  color: #000000;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid #c6c6cd;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #45464d;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icons .material-symbols-outlined {
+  font-size: 20px;
+  color: #45464d;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-icons .material-symbols-outlined:hover {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

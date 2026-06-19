@@ -58,12 +58,143 @@
       "devops": "DevOps",
       "architecture": "Arquitectura"
     },
+    "courses": {
+      "infrastructure": {
+        "title": "Infraestructura como Código",
+        "description": "Domina Terraform y Ansible para aprovisionamiento automatizado en la nube en AWS y GCP.",
+        "tag": "KUBERNETES"
+      },
+      "concurrency": {
+        "title": "Patrones de Concurrencia",
+        "description": "Profundiza en asyncio, threading y multiprocesamiento para Python de alto rendimiento.",
+        "tag": "PYTHON"
+      },
+      "defensive": {
+        "title": "Codificación Defensiva",
+        "description": "Implementación de estándares OWASP y escaneo de seguridad automatizado en pipelines CI/CD.",
+        "tag": "SEGURIDAD"
+      }
+    },
     "beginnerFriendly": "PARA PRINCIPIANTES",
     "studyMaterials": "Materiales de Estudio",
+    "materials": {
+      "guide": "Guía_Sistemas_Distribuidos.pdf",
+      "guideSize": "PDF • 12.4 MB",
+      "exercises": "Ejercicios_Prácticos_Vol3.zip",
+      "exercisesSize": "Archivo • 45.0 MB",
+      "video": "Archivo_Conferencias_2023.mp4",
+      "videoSize": "Video • 1.2 GB"
+    },
     "upcomingWorkshops": "Próximos Talleres en Vivo",
     "workshops": {
+      "database": {
+        "title": "Q&A: Optimización de Consultas en Base de Datos",
+        "description": "Únete a la Ingeniera Principal Sarah Chen para una inmersión profunda en la optimización de rendimiento de Postgres.",
+        "time": "MAÑANA • 14:00 GMT"
+      },
+      "networking": {
+        "title": "Taller: Redes de Confianza Cero",
+        "description": "Una sesión práctica sobre la implementación de perímetros de red seguros en entornos de nube.",
+        "time": "JUEVES • 10:00 GMT"
+      },
       "attendees": "+{{count}} Asistentes"
     },
     "viewAllEvents": "Ver Todos los Eventos"
+  },
+  "employability": {
+    "hero": {
+      "title": "Eleva tu Carrera",
+      "description": "Domina el arte de las entrevistas técnicas y refina tu presencia profesional con nuestro conjunto de herramientas especializadas.",
+      "mockInterview": "Iniciar Entrevista Simulada",
+      "uploadResume": "Subir CV",
+      "readinessScore": "Puntuación de Preparación",
+      "profileStrength": "Fortaleza del Perfil"
+    },
+    "resume": {
+      "title": "Análisis de CV",
+      "lastUpdated": "Última actualización: hace 2 días",
+      "edit": "Editar CV",
+      "atsScore": "Puntuación ATS",
+      "readability": "Legibilidad",
+      "high": "Alta",
+      "keywords": "Palabras Clave",
+      "match": "Coincidencia",
+      "impact": "Impacto",
+      "optimal": "Óptimo",
+      "criticalImprovements": "Mejoras Críticas",
+      "quantifyTitle": "Cuantifica tus Logros",
+      "quantifyDesc": "Agrega métricas a tu experiencia en 'Tech Solutions'. Usa porcentajes o números concretos.",
+      "missingSkillsTitle": "Habilidades Técnicas Faltantes",
+      "missingSkillsDesc": "Considera agregar Kubernetes y GraphQL según tu historial de proyectos actual."
+    },
+    "liveTracking": {
+      "title": "Seguimiento en Vivo",
+      "status": {
+        "interview": "Entrevista",
+        "applied": "Aplicado",
+        "closed": "Cerrado"
+      },
+      "app1": {
+        "title": "Ingeniero Frontend Senior",
+        "company": "Google • Zurich, CH",
+        "status": "Entrevista",
+        "date": "Próximo: Entrevista Presencial (12 de Junio)"
+      },
+      "app2": {
+        "title": "Desarrollador Full Stack",
+        "company": "Stripe • Remoto",
+        "status": "Aplicado",
+        "date": "Enviado hace 4 días"
+      },
+      "app3": {
+        "title": "Gerente de Ingeniería",
+        "company": "Airbnb • Berlín, DE",
+        "status": "Cerrado",
+        "date": "Posición cubierta"
+      },
+      "viewAll": "Ver Todas las Aplicaciones"
+    },
+    "training": {
+      "title": "Entrenamiento para Entrevistas",
+      "subtitle": "Simulación con IA y recursos de expertos.",
+      "explore": "Explorar Catálogo",
+      "behavioral": {
+        "title": "Marcos de Comportamiento",
+        "description": "Domina el método STAR para preguntas de liderazgo y resolución de conflictos.",
+        "tag": "Nuevo",
+        "duration": "45 min • Intermedio"
+      },
+      "systemDesign": {
+        "title": "Inmersión en Diseño de Sistemas",
+        "description": "Patrones de arquitectura para sistemas distribuidos de alta disponibilidad.",
+        "duration": "120 min • Avanzado"
+      },
+      "frontend": {
+        "title": "Ingeniería Frontend 101",
+        "description": "Conceptos básicos de manipulación del DOM, ciclos de renderizado y optimización de rendimiento.",
+        "duration": "60 min • Principiante"
+      }
+    },
+    "mentorship": {
+      "title": "Conecta con Mentores",
+      "description": "Obtén retroalimentación directa de ingenieros en empresas de primer nivel. Agenda una sesión 1:1 o únete a un círculo de revisión entre pares.",
+      "online": "+{{count}} Mentores en línea",
+      "communityBoard": "Tablero Comunitario",
+      "nextSession": "Próxima sesión: System Design AMA",
+      "referralNetwork": "Red de Referencias",
+      "newOpenings": "28 Nuevas vacantes de tus contactos",
+      "joinNetwork": "Únete a la Red"
+    },
+    "footer": {
+      "resources": "Recursos",
+      "jobBoard": "Bolsa de Trabajo",
+      "resumeTemplates": "Plantillas de CV",
+      "mockInterviews": "Entrevistas Simuladas",
+      "legal": "Legal",
+      "privacyPolicy": "Política de Privacidad",
+      "termsOfService": "Términos de Servicio",
+      "cookiePolicy": "Política de Cookies",
+      "copyright": "© 2024 DevFlow OS. Todos los derechos reservados."
+    }
   }
 }
