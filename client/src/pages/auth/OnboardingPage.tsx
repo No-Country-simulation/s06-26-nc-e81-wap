@@ -1,19 +1,35 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
-import { Button } from '@/shared/ui/button'
+import { useAuthStore } from '@/store/auth.store'
+import { Navbar } from '@/features/dashboard/components/Navbar'
+import { OnboardingStepper } from '@/features/onboarding/components/OnboardingStepper'
+import { saveOnboarding } from '@/services/api/onboarding.api'
+import type { OnboardingData } from '@/features/onboarding/types/onboarding.types'
 
 export function OnboardingPage() {
-  const { t } = useTranslation()
   const navigate = useNavigate()
+  const completeOnboarding = useAuthStore((s) => s.completeOnboarding)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleComplete = async (_data: OnboardingData) => {
+    setIsSubmitting(true)
+    try {
+      await saveOnboarding(_data)
+      completeOnboarding()
+      navigate('/dashboard', { replace: true })
+    } catch (err) {
+      console.error('Onboarding error:', err)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-8 bg-bg px-4">
-      <span className="select-none text-6xl">🧠</span>
-      <h1 className="font-heading text-2xl font-bold text-text">{t('auth.onboarding')}</h1>
-      <p className="text-text-secondary">Próximamente — completa tu perfil</p>
-      <Button variant="outline" onClick={() => navigate('/dashboard', { replace: true })}>
-        {t('auth.onboardingSkip')}
-      </Button>
-    </main>
+    <div className="flex min-h-screen flex-col bg-bg">
+      <Navbar />
+      <main className="flex flex-1 justify-center px-4 pt-12 sm:pt-20">
+        <OnboardingStepper onComplete={handleComplete} isSubmitting={isSubmitting} />
+      </main>
+    </div>
   )
 }

@@ -24,7 +24,7 @@ export function RegisterPage() {
     setIsPending(true)
     try {
       const res = await register({ name: data.name, email: data.email, password: data.password })
-      setAuth(res.user, res.token)
+      setAuth(res.user, res.token, false)
       navigate('/onboarding', { replace: true })
     } catch (err) {
       console.error('Register error:', err)

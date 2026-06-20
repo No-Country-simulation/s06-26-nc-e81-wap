@@ -19,8 +19,8 @@ export function LoginPage() {
     setIsPending(true)
     try {
       const res = await login(data)
-      setAuth(res.user, res.token)
-      navigate('/dashboard', { replace: true })
+      setAuth(res.user, res.token, false)
+      navigate('/onboarding', { replace: true })
     } catch (err) {
       console.error('Login error:', err)
     } finally {
