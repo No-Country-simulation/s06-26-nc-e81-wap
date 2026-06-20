@@ -103,7 +103,7 @@ export function Sidebar({ collapsed }: SidebarProps) {
               )}
             </button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" side="right" className="min-w-40">
+          <DropdownMenuContent align="end" side="right" className="min-w-40 bg-bg-secondary border-border">
             <DropdownMenuItem
               onClick={() => navigate("/dashboard")}
               className="cursor-pointer"

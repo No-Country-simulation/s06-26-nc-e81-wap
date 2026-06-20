@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Menu, Languages, Sun, Moon, Search, LogOut, User } from "lucide-react";
+import { Menu, Search, LogOut, User } from "lucide-react";
 
 import { Button } from "@/shared/ui/button";
 import { Input } from "@/shared/ui/input";
@@ -13,19 +13,15 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
 } from "@/shared/ui/dropdown-menu";
-import { cn } from "@/shared/utils/cn";
-import { changeLanguage } from "@/i18n";
-import { useTheme } from "@/shared/hooks/useTheme";
+import { ThemeToggle } from "@/shared/components/ThemeToggle";
+import { LanguageSwitcher } from "@/shared/components/LanguageSwitcher";
 import { useAuthStore } from "@/store/auth.store";
 import { Sidebar } from "@/features/dashboard/components/Sidebar";
 import { navItems } from "@/features/dashboard/constants/nav-items";
 
-import { languages } from "@/features/dashboard/constants";
-
 export function Navbar() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const location = useLocation();
-  const { theme, toggleTheme } = useTheme();
   const { user, logout } = useAuthStore();
   const navigate = useNavigate();
 
@@ -73,45 +69,8 @@ export function Navbar() {
           <Search className="h-5 w-5" />
         </Button>
 
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="text-text-secondary hover:text-text"
-            >
-              <Languages className="h-5 w-5" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="min-w-16 bg-bg-secondary border-border">
-            {languages.map(({ code, label }) => (
-              <DropdownMenuItem
-                key={code}
-                onClick={() => changeLanguage(code)}
-                className={cn(
-                  "cursor-pointer",
-                  i18n.language === code && "font-medium text-primary",
-                )}
-              >
-                {label}
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
-
-        <Button
-          variant="ghost"
-          size="icon"
-          className="text-text-secondary hover:text-text"
-          onClick={toggleTheme}
-          title={theme === "dark" ? t("theme.light") : t("theme.dark")}
-        >
-          {theme === "dark" ? (
-            <Sun className="h-5 w-5" />
-          ) : (
-            <Moon className="h-5 w-5" />
-          )}
-        </Button>
+        <LanguageSwitcher />
+        <ThemeToggle />
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>

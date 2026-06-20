@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Flame, Clock, Award, ArrowRight } from "lucide-react";
+import { Button } from "@/shared/ui/button";
 import { Skeleton } from "@/shared/ui/Skeleton";
 import type { HeroSectionProps } from "@/features/training/types/training.types";
 
@@ -73,9 +74,9 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
               />
             </div>
           </div>
-          <button className="whitespace-nowrap rounded-lg bg-text px-6 py-2.5 text-xs font-semibold tracking-wider text-bg transition-colors hover:bg-primary">
+          <Button variant="solid" size="sm">
             {t("training.resumeLearning")}
-          </button>
+          </Button>
         </div>
       </div>
 
