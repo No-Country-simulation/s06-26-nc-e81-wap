@@ -34,3 +34,25 @@ export type ProgressData = {
   learningHours: number
   badgesEarned: number
 }
+
+// ── Component prop types ──
+
+export type CourseCardProps = {
+  course: Course
+}
+
+export type HeroSectionProps = {
+  progress: ProgressData | null
+  isLoading?: boolean
+}
+
+export type CourseCatalogProps = {
+  courses: Course[]
+  isLoading?: boolean
+}
+
+export type StudyMaterialsProps = {
+  materials: StudyMaterial[]
+  workshops: Workshop[]
+  isLoading?: boolean
+}

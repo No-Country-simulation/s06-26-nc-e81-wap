@@ -1,11 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Star } from 'lucide-react'
 import { Avatar, AvatarImage, AvatarFallback } from '@/shared/ui/avatar'
-import type { Course } from '@/features/training/types/training.types'
-
-type CourseCardProps = {
-  course: Course
-}
+import type { CourseCardProps } from '@/features/training/types/training.types'
 
 export function CourseCard({ course }: CourseCardProps) {
   const { t } = useTranslation()

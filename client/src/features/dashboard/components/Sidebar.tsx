@@ -15,7 +15,9 @@ import { cn } from "@/shared/utils/cn";
 import { useAuthStore } from "@/store/auth.store";
 import { navItems } from "@/features/dashboard/constants/nav-items";
 
-export function Sidebar({ collapsed }: { collapsed?: boolean }) {
+import type { SidebarProps } from "@/features/dashboard/types/dashboard.types";
+
+export function Sidebar({ collapsed }: SidebarProps) {
   const { t } = useTranslation();
   const { user, logout } = useAuthStore();
   const navigate = useNavigate();

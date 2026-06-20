@@ -4,7 +4,40 @@
     "tagline": "Tu ecosistema de orientación personal"
   },
   "dashboard": {
-    "welcome": "Bienvenido a App BiT. Explora las secciones del menú para acceder a formación, empleabilidad, experiencias, mentorías y salud mental."
+    "welcome": "Bienvenido a App BiT. Explora las secciones del menú para acceder a formación, empleabilidad, experiencias, mentorías y salud mental.",
+    "greeting": "Panel de {{name}}",
+    "subtitle": "Aquí tienes un resumen de tu actividad en la plataforma.",
+    "defaultName": "Usuario",
+    "error": "Error al cargar el panel",
+    "retry": "Reintentar",
+    "noHighlight": "Aún no tienes experiencias planificadas.",
+    "exploreExperiences": "Explorar experiencias",
+    "highlightTag": "Próxima actividad",
+    "daysRemaining": "Faltan {{count}} días",
+    "noWidgetData": "Aún no hay datos disponibles.",
+    "lists": {
+      "empleabilidad": "Postulaciones activas",
+      "formacion": "Cursos completados",
+      "mentorias": "Próximas mentorías",
+      "viewAll": "Ver todo",
+      "empty": "Aún no hay datos disponibles."
+    },
+    "extra": {
+      "codewars": "Desafío",
+      "openCodewars": "Ir a Codewars",
+      "codewarsPrompt": "¿Te sientes con ánimo de un desafío?",
+      "quoteOfTheDay": "Frase del día",
+      "streak": "Racha",
+      "streakCount_one": "{{count}} día seguido",
+      "streakCount_other": "{{count}} días seguidos"
+    },
+    "cta": {
+      "formacion": "Ir a formación",
+      "empleabilidad": "Ver postulaciones",
+      "experiencias": "Ver detalles",
+      "mentorias": "Agendar mentoría",
+      "salud-mental": "Hacer check-in"
+    }
   },
   "nav": {
     "dashboard": "Panel",
@@ -99,6 +132,7 @@
       },
       "attendees": "+{{count}} Asistentes"
     },
+    "noCourses": "No hay cursos disponibles en esta categoría.",
     "viewAllEvents": "Ver Todos los Eventos"
   },
   "employability": {
