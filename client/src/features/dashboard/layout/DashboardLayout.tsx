@@ -1,13 +1,26 @@
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { Outlet } from 'react-router-dom'
 import { PanelLeftClose, PanelLeftOpen } from 'lucide-react'
 
 import { cn } from '@/shared/utils/cn'
 import { Sidebar } from '@/features/dashboard/components/Sidebar'
 import { Navbar } from '@/features/dashboard/components/Navbar'
+import { MoodModal } from '@/features/mental-health/components/MoodModal'
+import { useMentalHealth } from '@/features/mental-health/hooks/useMentalHealth'
+import type { MoodValue } from '@/features/mental-health/types/mental-health.types'
 
 export function DashboardLayout() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
+  const [moodModalOpen, setMoodModalOpen] = useState(true)
+  const { saveMood } = useMentalHealth()
+
+  const handleMoodSelect = useCallback(
+    async (mood: MoodValue) => {
+      await saveMood(mood)
+      setMoodModalOpen(false)
+    },
+    [saveMood],
+  )
 
   return (
     <div className="flex h-screen bg-bg">
@@ -37,6 +50,7 @@ export function DashboardLayout() {
           <Outlet />
         </main>
       </div>
+      <MoodModal open={moodModalOpen} onSelect={handleMoodSelect} />
     </div>
   )
 }

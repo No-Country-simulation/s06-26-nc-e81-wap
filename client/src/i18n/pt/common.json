@@ -150,7 +150,6 @@
     "back": "Voltar",
     "next": "Avançar",
     "finish": "Finalizar"
-
   },
   "theme": {
     "dark": "Escuro",
@@ -198,6 +197,43 @@
     },
     "noCourses": "Nenhum curso disponível nesta categoria.",
     "viewAllEvents": "Ver Todos os Eventos"
+  },
+  "mental-health": {
+    "hero": {
+      "badge": "Mindful Engineering",
+      "title": "Mindful Engineering",
+      "description": "Otimize seu desempenho cognitivo e proteja seu bem-estar emocional. App bit integra ferramentas de saúde mental projetadas especificamente para o fluxo de trabalho do desenvolvedor.",
+      "startMeditation": "Iniciar meditação 5 min",
+      "scheduleMeditation": "Agendar meditação"
+    },
+    "pomodoro": {
+      "title": "Pomodoro",
+      "work": "Foco",
+      "break": "Pausa",
+      "start": "Iniciar",
+      "pause": "Pausar",
+      "reset": "Reiniciar"
+    },
+    "mood": {
+      "title": "Estado Semanal",
+      "average": "Média de humor semanal",
+      "noData": "Nenhum registro de humor ainda"
+    },
+    "support": {
+      "title": "Apoio emocional 24/7",
+      "description": "Passando por um momento difícil? Nossos psicólogos especializados em tecnologia estão disponíveis para sessões anônimas.",
+      "cta": "Falar com um especialista"
+    },
+    "modal": {
+      "greeting": "Bem-vindo {{name}}",
+      "title": "Como você está se sentindo hoje?",
+      "subtitle": "Sua resposta é anônima e nos ajuda a oferecer as melhores opções para você.",
+      "mood1": "Muito mal",
+      "mood2": "Mal",
+      "mood3": "Regular",
+      "mood4": "Bem",
+      "mood5": "Excelente"
+    }
   },
   "employability": {
     "hero": {
