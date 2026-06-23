@@ -15,7 +15,7 @@ export function StudyMaterials({
 
   if (isLoading) {
     return (
-      <section className="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <section className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2">
         <div>
           <Skeleton className="mb-6 h-8 w-44" />
           <div className="flex flex-col gap-3">
@@ -24,9 +24,9 @@ export function StudyMaterials({
                 key={i}
                 className="flex items-center justify-between rounded-lg border border-border bg-surface p-4"
               >
-                <div className="flex items-center gap-4">
-                  <Skeleton className="h-10 w-10 rounded-lg" />
-                  <div className="space-y-1">
+                <div className="flex items-center gap-4 min-w-0">
+                  <Skeleton className="h-10 w-10 shrink-0 rounded-lg" />
+                  <div className="min-w-0 flex-1 space-y-1">
                     <Skeleton className="h-4 w-48" />
                     <Skeleton className="h-3 w-24" />
                   </div>
@@ -42,7 +42,7 @@ export function StudyMaterials({
             <div className="relative flex flex-col gap-8 border-l-2 border-border pl-6">
               {Array.from({ length: 2 }).map((_, i) => (
                 <div key={i} className="relative space-y-2">
-                  <Skeleton className="absolute -left-7.75 top-0 h-4 w-4 rounded-full" />
+                  <Skeleton className="absolute -left-2 top-0 h-4 w-4 rounded-full" />
                   <Skeleton className="h-4 w-40" />
                   <Skeleton className="h-4 w-3/4" />
                   <Skeleton className="h-3 w-full" />
@@ -56,7 +56,7 @@ export function StudyMaterials({
   }
 
   return (
-    <section className="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <section className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2">
       <div>
         <h3 className="mb-6 text-2xl font-semibold leading-8 tracking-tight text-text">
           {t("training.studyMaterials")}
@@ -69,12 +69,12 @@ export function StudyMaterials({
                 key={material.id}
                 className="group flex cursor-pointer items-center justify-between rounded-lg border border-border bg-surface p-4 transition-all hover:border-primary"
               >
-                <div className="flex items-center gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors group-hover:text-primary">
+                <div className="flex items-center gap-4 min-w-0">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-muted text-muted-foreground transition-colors group-hover:text-primary">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <div>
-                    <p className="text-xs font-semibold tracking-wider text-text">
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-xs font-semibold tracking-wider text-text">
                       {material.title}
                     </p>
                     <p className="text-[11px] uppercase tracking-wider text-text-secondary">
@@ -102,7 +102,7 @@ export function StudyMaterials({
               >
                 <div
                   className={cn(
-                    "absolute -left-7.75 top-0 h-4 w-4 rounded-full border-4 border-surface",
+                    "absolute -left-2 top-0 h-4 w-4 rounded-full border-4 border-surface",
                     workshop.isUpcoming ? "bg-primary" : "bg-muted-foreground",
                   )}
                 />

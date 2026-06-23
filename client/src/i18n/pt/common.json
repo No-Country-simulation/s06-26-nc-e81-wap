@@ -198,5 +198,88 @@
     },
     "noCourses": "Nenhum curso disponível nesta categoria.",
     "viewAllEvents": "Ver Todos os Eventos"
+  },
+  "employability": {
+    "hero": {
+      "title": "Eleve Sua Carreira",
+      "description": "Descubra oportunidades alinhadas ao seu perfil e feche a lacuna para seu próximo emprego.",
+      "mockInterview": "Iniciar Entrevista Simulada",
+      "uploadResume": "Enviar CV",
+      "readinessScore": "Pontuação de Preparo",
+      "profileStrength": "Força do Perfil"
+    },
+    "resume": {
+      "title": "Análise de CV",
+      "lastUpdated": "Última atualização: há 2 dias",
+      "edit": "Editar CV",
+      "atsScore": "Pontuação ATS",
+      "readability": "Legibilidade",
+      "high": "Alta",
+      "keywords": "Palavras-chave",
+      "match": "Correspondência",
+      "impact": "Impacto",
+      "optimal": "Ótimo",
+      "criticalImprovements": "Melhorias Críticas",
+      "quantifyTitle": "Quantifique Suas Conquistas",
+      "quantifyDesc": "Adicione métricas à sua experiência na 'Tech Solutions'. Use porcentagens ou números concretos.",
+      "missingSkillsTitle": "Habilidades Técnicas Faltantes",
+      "missingSkillsDesc": "Considere adicionar Kubernetes e GraphQL com base no seu histórico de projetos."
+    },
+    "liveTracking": {
+      "title": "Acompanhamento ao Vivo",
+      "status": {
+        "interview": "Entrevista",
+        "applied": "Inscrito",
+        "closed": "Fechado"
+      },
+      "app1": {
+        "title": "Engenheiro Frontend Sênior",
+        "company": "Google • Zurique, CH",
+        "status": "Entrevista",
+        "date": "Próximo: Entrevista Presencial (12 de Junho)"
+      },
+      "app2": {
+        "title": "Desenvolvedor Full Stack",
+        "company": "Stripe • Remoto",
+        "status": "Inscrito",
+        "date": "Enviado há 4 dias"
+      },
+      "app3": {
+        "title": "Gerente de Engenharia",
+        "company": "Airbnb • Berlim, DE",
+        "status": "Fechado",
+        "date": "Posição preenchida"
+      },
+      "viewAll": "Ver Todas as Inscrições"
+    },
+    "training": {
+      "title": "Treinamento para Entrevistas",
+      "subtitle": "Simulação com IA e recursos de especialistas.",
+      "explore": "Explorar Catálogo",
+      "behavioral": {
+        "title": "Marcos Comportamentais",
+        "description": "Domine o método STAR para perguntas de liderança e resolução de conflitos.",
+        "tag": "Novo",
+        "duration": "45 min • Intermediário"
+      },
+      "systemDesign": {
+        "title": "Imersão em Design de Sistemas",
+        "description": "Padrões de arquitetura para sistemas distribuídos de alta disponibilidade.",
+        "duration": "120 min • Avançado"
+      },
+      "frontend": {
+        "title": "Engenharia Frontend 101",
+        "description": "Conceitos básicos de manipulação do DOM, ciclos de renderização e otimização de desempenho.",
+        "duration": "60 min • Iniciante"
+      }
+    },
+    "vacancies": {
+      "title": "Vagas Compatíveis",
+      "subtitle": "Ofertas alinhadas ao seu perfil profissional. Feche a lacuna e aumente seu match.",
+      "matchLabel": "Match",
+      "gapLabel": "Falta",
+      "apply": "Candidatar",
+      "noVacancies": "Nenhuma vaga disponível no momento."
+    }
   }
 }

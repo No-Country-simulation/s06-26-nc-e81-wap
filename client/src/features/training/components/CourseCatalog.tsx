@@ -79,7 +79,7 @@ export function CourseCatalog({ courses, isLoading }: CourseCatalogProps) {
             {t('training.catalogSubtitle')}
           </p>
         </div>
-        <div className="flex gap-2 rounded-lg bg-muted p-1">
+        <div className="flex gap-2 overflow-x-auto rounded-lg bg-muted p-1">
           {filters.map(({ key, label }) => (
             <button
               key={key}

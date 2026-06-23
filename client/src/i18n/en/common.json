@@ -199,5 +199,88 @@
     },
     "noCourses": "No courses available in this category.",
     "viewAllEvents": "View All Events"
+  },
+  "employability": {
+    "hero": {
+      "title": "Boost Your Career",
+      "description": "Discover opportunities aligned with your profile and close the gap to your next job.",
+      "mockInterview": "Start Mock Interview",
+      "uploadResume": "Upload CV",
+      "readinessScore": "Readiness Score",
+      "profileStrength": "Profile Strength"
+    },
+    "resume": {
+      "title": "Resume Analysis",
+      "lastUpdated": "Last updated: 2 days ago",
+      "edit": "Edit CV",
+      "atsScore": "ATS Score",
+      "readability": "Readability",
+      "high": "High",
+      "keywords": "Keywords",
+      "match": "Match",
+      "impact": "Impact",
+      "optimal": "Optimal",
+      "criticalImprovements": "Critical Improvements",
+      "quantifyTitle": "Quantify Your Achievements",
+      "quantifyDesc": "Add metrics to your experience at 'Tech Solutions'. Use percentages or concrete numbers.",
+      "missingSkillsTitle": "Missing Technical Skills",
+      "missingSkillsDesc": "Consider adding Kubernetes and GraphQL based on your current project history."
+    },
+    "liveTracking": {
+      "title": "Live Tracking",
+      "status": {
+        "interview": "Interview",
+        "applied": "Applied",
+        "closed": "Closed"
+      },
+      "app1": {
+        "title": "Senior Frontend Engineer",
+        "company": "Google • Zurich, CH",
+        "status": "Interview",
+        "date": "Upcoming: On-site Interview (June 12)"
+      },
+      "app2": {
+        "title": "Full Stack Developer",
+        "company": "Stripe • Remote",
+        "status": "Applied",
+        "date": "Submitted 4 days ago"
+      },
+      "app3": {
+        "title": "Engineering Manager",
+        "company": "Airbnb • Berlin, DE",
+        "status": "Closed",
+        "date": "Position filled"
+      },
+      "viewAll": "View All Applications"
+    },
+    "training": {
+      "title": "Interview Training",
+      "subtitle": "AI simulation and expert resources.",
+      "explore": "Explore Catalog",
+      "behavioral": {
+        "title": "Behavioral Frameworks",
+        "description": "Master the STAR method for leadership and conflict resolution questions.",
+        "tag": "New",
+        "duration": "45 min • Intermediate"
+      },
+      "systemDesign": {
+        "title": "System Design Deep Dive",
+        "description": "Architecture patterns for high-availability distributed systems.",
+        "duration": "120 min • Advanced"
+      },
+      "frontend": {
+        "title": "Frontend Engineering 101",
+        "description": "DOM manipulation basics, render cycles, and performance optimization.",
+        "duration": "60 min • Beginner"
+      }
+    },
+    "vacancies": {
+      "title": "Compatible Vacancies",
+      "subtitle": "Offers aligned with your professional profile. Close the gap and increase your match.",
+      "matchLabel": "Match",
+      "gapLabel": "You're missing",
+      "apply": "Apply",
+      "noVacancies": "No vacancies available at the moment."
+    }
   }
 }

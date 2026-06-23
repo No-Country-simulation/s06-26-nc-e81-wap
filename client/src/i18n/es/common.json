@@ -238,7 +238,7 @@
   "employability": {
     "hero": {
       "title": "Eleva tu Carrera",
-      "description": "Domina el arte de las entrevistas técnicas y refina tu presencia profesional con nuestro conjunto de herramientas especializadas.",
+      "description": "Descubre oportunidades alineadas con tu perfil y cierra la brecha hacia tu próximo empleo.",
       "mockInterview": "Iniciar Entrevista Simulada",
       "uploadResume": "Subir CV",
       "readinessScore": "Puntuación de Preparación",
@@ -309,26 +309,13 @@
         "duration": "60 min • Principiante"
       }
     },
-    "mentorship": {
-      "title": "Conecta con Mentores",
-      "description": "Obtén retroalimentación directa de ingenieros en empresas de primer nivel. Agenda una sesión 1:1 o únete a un círculo de revisión entre pares.",
-      "online": "+{{count}} Mentores en línea",
-      "communityBoard": "Tablero Comunitario",
-      "nextSession": "Próxima sesión: System Design AMA",
-      "referralNetwork": "Red de Referencias",
-      "newOpenings": "28 Nuevas vacantes de tus contactos",
-      "joinNetwork": "Únete a la Red"
-    },
-    "footer": {
-      "resources": "Recursos",
-      "jobBoard": "Bolsa de Trabajo",
-      "resumeTemplates": "Plantillas de CV",
-      "mockInterviews": "Entrevistas Simuladas",
-      "legal": "Legal",
-      "privacyPolicy": "Política de Privacidad",
-      "termsOfService": "Términos de Servicio",
-      "cookiePolicy": "Política de Cookies",
-      "copyright": "© 2024 DevFlow OS. Todos los derechos reservados."
+    "vacancies": {
+      "title": "Vacantes Compatibles",
+      "subtitle": "Ofertas alineadas con tu perfil profesional. Completa el gap y aumenta tu match.",
+      "matchLabel": "Match",
+      "gapLabel": "Te falta",
+      "apply": "Postularme",
+      "noVacancies": "No hay vacantes disponibles en este momento."
     }
   }
 }
