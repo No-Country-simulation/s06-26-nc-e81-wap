@@ -271,6 +271,36 @@
       "mood5": "Excelente"
     }
   },
+  "experiences": {
+    "hero": {
+      "badge": "Experiencia Destacada",
+      "cta": "Ver historia completa"
+    },
+    "gallery": {
+      "title": "Experiencias en Video",
+      "subtitle": "Testimonios reales de profesionales que recorrieron el mismo camino.",
+      "empty": "No hay experiencias disponibles en esta categoría."
+    },
+    "filters": {
+      "all": "Todas",
+      "liderazgo": "Liderazgo",
+      "mujeres-en-tech": "Mujeres en Tech",
+      "cambio-de-carrera": "Cambio de Carrera",
+      "emprendimiento": "Emprendimiento",
+      "latam": "LATAM"
+    },
+    "events": {
+      "title": "Próximos Eventos",
+      "empty": "No hay eventos programados.",
+      "register": "Registrarme",
+      "recorded": "Evento realizado",
+      "attendees": "+{{count}} asistentes"
+    },
+    "widget": {
+      "videos": "Experiencias disponibles",
+      "noEvents": "No hay próximos eventos"
+    }
+  },
   "mentorship": {
     "notifications": "Actividad Reciente",
     "notificationEmpty": "No hay actividad reciente",
