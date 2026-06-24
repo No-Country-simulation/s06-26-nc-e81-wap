@@ -51,8 +51,105 @@
     "login": "Entrar",
     "register": "Criar conta",
     "email": "E-mail",
+    "emailPlaceholder": "voce@email.com",
     "password": "Senha",
-    "onboarding": "Completar perfil"
+    "passwordPlaceholder": "••••••••",
+    "confirmPassword": "Confirmar senha",
+    "confirmPasswordPlaceholder": "Repita sua senha",
+    "name": "Nome completo",
+    "namePlaceholder": "Ex: João Silva",
+    "forgotPassword": "Esqueceu sua senha?",
+    "loginWithGoogle": "Entrar com Google",
+    "loginWithGithub": "Entrar com GitHub",
+    "registerWithGoogle": "Registrar com Google",
+    "registerWithGithub": "Registrar com GitHub",
+    "noAccount": "Não tem conta?",
+    "hasAccount": "Já tem conta?",
+    "registerLink": "Cadastre-se",
+    "loginLink": "Faça login",
+    "onboarding": "Completar perfil",
+    "onboardingSkip": "Pular para o painel",
+    "heroHeader": "Construa seu futuro",
+    "heroSubHeader": "em desenvolvimento",
+    "errorRequired": "Este campo é obrigatório",
+    "errorEmail": "E-mail inválido",
+    "heroDescription": "Seu próximo grande desafio espera por você. Descubra oportunidades, conecte-se com mentores e faça seu talento fluir sem limites.",
+    "errorPasswordMatch": "As senhas não coincidem",
+    "errorPasswordLength": "Mínimo 6 caracteres",
+    "comingSoon": "Em breve",
+    "featureCourses": "Prepare-se com os melhores cursos do mercado",
+    "featureJobs": "Candidate-se a ofertas reais de trabalho"
+  },
+  "onboarding": {
+    "title": "Complete seu perfil de desenvolvedor",
+    "subtitle": "Seu perfil te visualizará dentro do nosso ecossistema",
+    "step": "Passo",
+    "stepGenerales": "Gerais",
+    "stepUbicacion": "Sua localização",
+    "stepPerfil": "Seu perfil tecnológico",
+    "phone": "Telefone (WhatsApp)",
+    "selectOption": "Selecione...",
+    "dateOfBirth": "Data de Nascimento",
+    "gender": "Gênero",
+    "genderMale": "Masculino",
+    "genderFemale": "Feminino",
+    "genderNonBinary": "Não binário",
+    "genderOther": "Outro",
+    "education": "Escolaridade",
+    "educationHighSchool": "Ensino Médio",
+    "educationSomeCollege": "Ensino Superior Incompleto",
+    "educationBachelor": "Graduação",
+    "educationMaster": "Mestrado",
+    "educationDoctorate": "Doutorado",
+    "educationTechnical": "Curso Técnico / Tecnólogo",
+    "continent": "Continente",
+    "continentAmericas": "Américas",
+    "continentEurope": "Europa",
+    "continentAfrica": "África",
+    "continentAsia": "Ásia",
+    "continentOceania": "Oceania",
+    "country": "País",
+    "countryBR": "Brasil",
+    "countryAO": "Angola",
+    "countryAR": "Argentina",
+    "countryCL": "Chile",
+    "countryCO": "Colômbia",
+    "countryMX": "México",
+    "countryPE": "Peru",
+    "state": "Estado / Província",
+    "statePlaceholder": "Digite seu estado",
+    "city": "Cidade",
+    "cityPlaceholder": "Digite sua cidade",
+    "whatsapp": "WhatsApp (opcional)",
+    "level": "Nível Profissional",
+    "levelTrainee": "Trainee / Estagiário",
+    "levelJr": "Júnior",
+    "levelSsr": "Pleno",
+    "levelSr": "Sênior",
+    "levelLead": "Lead / Gerente",
+    "techArea": "Área de Tecnologia",
+    "techFrontend": "Frontend",
+    "techBackend": "Backend",
+    "techData": "Dados / Data Science",
+    "techMobile": "Mobile",
+    "techQa": "QA / Testes",
+    "techDevops": "DevOps / Cloud",
+    "techSecurity": "Segurança",
+    "techDesign": "UX / UI Design",
+    "techProduct": "Gestão de Produto",
+    "techOther": "Outra",
+    "goal": "O que você busca?",
+    "goalStudy": "Estudar e melhorar minhas habilidades",
+    "goalDefine": "Definir meu caminho profissional",
+    "goalFindJob": "Buscar emprego",
+    "goalChangeJob": "Mudar de emprego",
+    "errorRequired": "Este campo é obrigatório",
+    "stepPersonal": "Dados Pessoais",
+    "stepLocation": "Localização",
+    "stepProfessional": "Dados Profissionais",
+    "back": "Voltar",
+    "next": "Avançar",
+    "finish": "Finalizar"
   },
   "theme": {
     "dark": "Escuro",
@@ -66,6 +163,7 @@
     "delete": "Excluir",
     "search": "Pesquisar",
     "search-placeholder": "Pesquisar na plataforma...",
+    "or": "ou",
     "logout": "Sair",
     "profile": "Perfil"
   },
@@ -99,5 +197,125 @@
     },
     "noCourses": "Nenhum curso disponível nesta categoria.",
     "viewAllEvents": "Ver Todos os Eventos"
+  },
+  "mental-health": {
+    "hero": {
+      "badge": "Mindful Engineering",
+      "title": "Mindful Engineering",
+      "description": "Otimize seu desempenho cognitivo e proteja seu bem-estar emocional. App bit integra ferramentas de saúde mental projetadas especificamente para o fluxo de trabalho do desenvolvedor.",
+      "startMeditation": "Iniciar meditação 5 min",
+      "scheduleMeditation": "Agendar meditação"
+    },
+    "pomodoro": {
+      "title": "Pomodoro",
+      "work": "Foco",
+      "break": "Pausa",
+      "start": "Iniciar",
+      "pause": "Pausar",
+      "reset": "Reiniciar"
+    },
+    "mood": {
+      "title": "Estado Semanal",
+      "average": "Média de humor semanal",
+      "noData": "Nenhum registro de humor ainda"
+    },
+    "support": {
+      "title": "Apoio emocional 24/7",
+      "description": "Passando por um momento difícil? Nossos psicólogos especializados em tecnologia estão disponíveis para sessões anônimas.",
+      "cta": "Falar com um especialista"
+    },
+    "modal": {
+      "greeting": "Bem-vindo {{name}}",
+      "title": "Como você está se sentindo hoje?",
+      "subtitle": "Sua resposta é anônima e nos ajuda a oferecer as melhores opções para você.",
+      "mood1": "Muito mal",
+      "mood2": "Mal",
+      "mood3": "Regular",
+      "mood4": "Bem",
+      "mood5": "Excelente"
+    }
+  },
+  "employability": {
+    "hero": {
+      "title": "Eleve Sua Carreira",
+      "description": "Descubra oportunidades alinhadas ao seu perfil e feche a lacuna para seu próximo emprego.",
+      "mockInterview": "Iniciar Entrevista Simulada",
+      "uploadResume": "Enviar CV",
+      "readinessScore": "Pontuação de Preparo",
+      "profileStrength": "Força do Perfil"
+    },
+    "resume": {
+      "title": "Análise de CV",
+      "lastUpdated": "Última atualização: há 2 dias",
+      "edit": "Editar CV",
+      "atsScore": "Pontuação ATS",
+      "readability": "Legibilidade",
+      "high": "Alta",
+      "keywords": "Palavras-chave",
+      "match": "Correspondência",
+      "impact": "Impacto",
+      "optimal": "Ótimo",
+      "criticalImprovements": "Melhorias Críticas",
+      "quantifyTitle": "Quantifique Suas Conquistas",
+      "quantifyDesc": "Adicione métricas à sua experiência na 'Tech Solutions'. Use porcentagens ou números concretos.",
+      "missingSkillsTitle": "Habilidades Técnicas Faltantes",
+      "missingSkillsDesc": "Considere adicionar Kubernetes e GraphQL com base no seu histórico de projetos."
+    },
+    "liveTracking": {
+      "title": "Acompanhamento ao Vivo",
+      "status": {
+        "interview": "Entrevista",
+        "applied": "Inscrito",
+        "closed": "Fechado"
+      },
+      "app1": {
+        "title": "Engenheiro Frontend Sênior",
+        "company": "Google • Zurique, CH",
+        "status": "Entrevista",
+        "date": "Próximo: Entrevista Presencial (12 de Junho)"
+      },
+      "app2": {
+        "title": "Desenvolvedor Full Stack",
+        "company": "Stripe • Remoto",
+        "status": "Inscrito",
+        "date": "Enviado há 4 dias"
+      },
+      "app3": {
+        "title": "Gerente de Engenharia",
+        "company": "Airbnb • Berlim, DE",
+        "status": "Fechado",
+        "date": "Posição preenchida"
+      },
+      "viewAll": "Ver Todas as Inscrições"
+    },
+    "training": {
+      "title": "Treinamento para Entrevistas",
+      "subtitle": "Simulação com IA e recursos de especialistas.",
+      "explore": "Explorar Catálogo",
+      "behavioral": {
+        "title": "Marcos Comportamentais",
+        "description": "Domine o método STAR para perguntas de liderança e resolução de conflitos.",
+        "tag": "Novo",
+        "duration": "45 min • Intermediário"
+      },
+      "systemDesign": {
+        "title": "Imersão em Design de Sistemas",
+        "description": "Padrões de arquitetura para sistemas distribuídos de alta disponibilidade.",
+        "duration": "120 min • Avançado"
+      },
+      "frontend": {
+        "title": "Engenharia Frontend 101",
+        "description": "Conceitos básicos de manipulação do DOM, ciclos de renderização e otimização de desempenho.",
+        "duration": "60 min • Iniciante"
+      }
+    },
+    "vacancies": {
+      "title": "Vagas Compatíveis",
+      "subtitle": "Ofertas alinhadas ao seu perfil profissional. Feche a lacuna e aumente seu match.",
+      "matchLabel": "Match",
+      "gapLabel": "Falta",
+      "apply": "Candidatar",
+      "noVacancies": "Nenhuma vaga disponível no momento."
+    }
   }
 }

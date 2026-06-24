@@ -8,7 +8,7 @@ export function TrainingPage() {
 
   return (
     <div className="min-h-screen bg-bg">
-      <div className="mx-auto max-w-6xl p-6">
+      <div className="mx-auto max-w-6xl px-2 lg:px-0">
         <HeroSection progress={progress} isLoading={isLoading} />
         <CourseCatalog courses={courses} isLoading={isLoading} />
         <StudyMaterials materials={materials} workshops={workshops} isLoading={isLoading} />

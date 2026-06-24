@@ -48,11 +48,109 @@
     "salud-mental": "Mental Health"
   },
   "auth": {
+    "heroHeader": "Build your future",
+    "heroSubHeader": "on development",
     "login": "Sign In",
     "register": "Create Account",
     "email": "Email",
+    "emailPlaceholder": "you@email.com",
     "password": "Password",
-    "onboarding": "Complete Profile"
+    "passwordPlaceholder": "••••••••",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Repeat your password",
+    "name": "Full Name",
+    "namePlaceholder": "e.g. John Doe",
+    "forgotPassword": "Forgot your password?",
+    "loginWithGoogle": "Sign in with Google",
+    "loginWithGithub": "Sign in with GitHub",
+    "registerWithGoogle": "Register with Google",
+    "registerWithGithub": "Register with GitHub",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "registerLink": "Sign up",
+    "loginLink": "Sign in",
+    "onboarding": "Complete Profile",
+    "onboardingSkip": "Skip to dashboard",
+    "heroTitle": "App BiT",
+    "heroDescription": "Your next big challenge awaits. Discover opportunities, connect with mentors, and let your talent flow without limits.",
+    "errorRequired": "This field is required",
+    "errorEmail": "Invalid email address",
+    "errorPasswordMatch": "Passwords do not match",
+    "errorPasswordLength": "Minimum 6 characters",
+    "comingSoon": "Coming soon",
+    "featureCourses": "Train with the best courses on the market",
+    "featureJobs": "Apply to real job offers"
+  },
+  "onboarding": {
+    "title": "Complete your developer profile",
+    "subtitle": "Your profile will showcase you within our ecosystem",
+    "step": "Step",
+    "stepGenerales": "General",
+    "stepUbicacion": "Your Location",
+    "stepPerfil": "Your Tech Profile",
+    "phone": "Phone (WhatsApp)",
+    "selectOption": "Select...",
+    "dateOfBirth": "Date of Birth",
+    "gender": "Gender",
+    "genderMale": "Male",
+    "genderFemale": "Female",
+    "genderNonBinary": "Non-binary",
+    "genderOther": "Other",
+    "education": "Education",
+    "educationHighSchool": "High School",
+    "educationSomeCollege": "Some College",
+    "educationBachelor": "Bachelor's Degree",
+    "educationMaster": "Master's Degree",
+    "educationDoctorate": "Doctorate / PhD",
+    "educationTechnical": "Technical Degree",
+    "continent": "Continent",
+    "continentAmericas": "Americas",
+    "continentEurope": "Europe",
+    "continentAfrica": "Africa",
+    "continentAsia": "Asia",
+    "continentOceania": "Oceania",
+    "country": "Country",
+    "countryBR": "Brazil",
+    "countryAO": "Angola",
+    "countryAR": "Argentina",
+    "countryCL": "Chile",
+    "countryCO": "Colombia",
+    "countryMX": "Mexico",
+    "countryPE": "Peru",
+    "state": "State / Province",
+    "statePlaceholder": "Type your state",
+    "city": "City",
+    "cityPlaceholder": "Type your city",
+    "whatsapp": "WhatsApp (optional)",
+    "level": "Professional Level",
+    "levelTrainee": "Trainee",
+    "levelJr": "Junior",
+    "levelSsr": "Mid-Level (SSR)",
+    "levelSr": "Senior",
+    "levelLead": "Lead / Manager",
+    "techArea": "Tech Area",
+    "techFrontend": "Frontend",
+    "techBackend": "Backend",
+    "techData": "Data / Data Science",
+    "techMobile": "Mobile",
+    "techQa": "QA / Testing",
+    "techDevops": "DevOps / Cloud",
+    "techSecurity": "Security",
+    "techDesign": "UX / UI Design",
+    "techProduct": "Product Management",
+    "techOther": "Other",
+    "goal": "What are you looking for?",
+    "goalStudy": "Study and improve my skills",
+    "goalDefine": "Define my career path",
+    "goalFindJob": "Find a job",
+    "goalChangeJob": "Change jobs",
+    "errorRequired": "This field is required",
+    "stepPersonal": "Personal Data",
+    "stepLocation": "Location",
+    "stepProfessional": "Professional Data",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish"
   },
   "theme": {
     "dark": "Dark",
@@ -66,6 +164,7 @@
     "delete": "Delete",
     "search": "Search",
     "search-placeholder": "Search the platform...",
+    "or": "or",
     "logout": "Log out",
     "profile": "Profile"
   },
@@ -99,5 +198,125 @@
     },
     "noCourses": "No courses available in this category.",
     "viewAllEvents": "View All Events"
+  },
+  "mental-health": {
+    "hero": {
+      "badge": "Mindful Engineering",
+      "title": "Mindful Engineering",
+      "description": "Optimize your cognitive performance and protect your emotional well-being. App bit integrates mental health tools designed specifically for the developer workflow.",
+      "startMeditation": "Start 5 min meditation",
+      "scheduleMeditation": "Schedule meditation"
+    },
+    "pomodoro": {
+      "title": "Pomodoro",
+      "work": "Focus",
+      "break": "Break",
+      "start": "Start",
+      "pause": "Pause",
+      "reset": "Reset"
+    },
+    "mood": {
+      "title": "Weekly Status",
+      "average": "Weekly mood average",
+      "noData": "No mood entries yet"
+    },
+    "support": {
+      "title": "24/7 Emotional Support",
+      "description": "Going through a tough time? Our psychologists specialized in tech are available for anonymous sessions.",
+      "cta": "Talk to a specialist"
+    },
+    "modal": {
+      "greeting": "Welcome {{name}}",
+      "title": "How are you feeling today?",
+      "subtitle": "Your answer is anonymous and helps us offer you the best options.",
+      "mood1": "Very bad",
+      "mood2": "Bad",
+      "mood3": "Okay",
+      "mood4": "Good",
+      "mood5": "Excellent"
+    }
+  },
+  "employability": {
+    "hero": {
+      "title": "Boost Your Career",
+      "description": "Discover opportunities aligned with your profile and close the gap to your next job.",
+      "mockInterview": "Start Mock Interview",
+      "uploadResume": "Upload CV",
+      "readinessScore": "Readiness Score",
+      "profileStrength": "Profile Strength"
+    },
+    "resume": {
+      "title": "Resume Analysis",
+      "lastUpdated": "Last updated: 2 days ago",
+      "edit": "Edit CV",
+      "atsScore": "ATS Score",
+      "readability": "Readability",
+      "high": "High",
+      "keywords": "Keywords",
+      "match": "Match",
+      "impact": "Impact",
+      "optimal": "Optimal",
+      "criticalImprovements": "Critical Improvements",
+      "quantifyTitle": "Quantify Your Achievements",
+      "quantifyDesc": "Add metrics to your experience at 'Tech Solutions'. Use percentages or concrete numbers.",
+      "missingSkillsTitle": "Missing Technical Skills",
+      "missingSkillsDesc": "Consider adding Kubernetes and GraphQL based on your current project history."
+    },
+    "liveTracking": {
+      "title": "Live Tracking",
+      "status": {
+        "interview": "Interview",
+        "applied": "Applied",
+        "closed": "Closed"
+      },
+      "app1": {
+        "title": "Senior Frontend Engineer",
+        "company": "Google • Zurich, CH",
+        "status": "Interview",
+        "date": "Upcoming: On-site Interview (June 12)"
+      },
+      "app2": {
+        "title": "Full Stack Developer",
+        "company": "Stripe • Remote",
+        "status": "Applied",
+        "date": "Submitted 4 days ago"
+      },
+      "app3": {
+        "title": "Engineering Manager",
+        "company": "Airbnb • Berlin, DE",
+        "status": "Closed",
+        "date": "Position filled"
+      },
+      "viewAll": "View All Applications"
+    },
+    "training": {
+      "title": "Interview Training",
+      "subtitle": "AI simulation and expert resources.",
+      "explore": "Explore Catalog",
+      "behavioral": {
+        "title": "Behavioral Frameworks",
+        "description": "Master the STAR method for leadership and conflict resolution questions.",
+        "tag": "New",
+        "duration": "45 min • Intermediate"
+      },
+      "systemDesign": {
+        "title": "System Design Deep Dive",
+        "description": "Architecture patterns for high-availability distributed systems.",
+        "duration": "120 min • Advanced"
+      },
+      "frontend": {
+        "title": "Frontend Engineering 101",
+        "description": "DOM manipulation basics, render cycles, and performance optimization.",
+        "duration": "60 min • Beginner"
+      }
+    },
+    "vacancies": {
+      "title": "Compatible Vacancies",
+      "subtitle": "Offers aligned with your professional profile. Close the gap and increase your match.",
+      "matchLabel": "Match",
+      "gapLabel": "You're missing",
+      "apply": "Apply",
+      "noVacancies": "No vacancies available at the moment."
+    }
   }
 }

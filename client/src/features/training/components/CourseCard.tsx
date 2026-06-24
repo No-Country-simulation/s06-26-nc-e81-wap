@@ -7,7 +7,7 @@ export function CourseCard({ course }: CourseCardProps) {
   const { t } = useTranslation()
   return (
     <div className="group cursor-pointer overflow-hidden rounded-xl border border-border bg-surface transition-all duration-200 hover:-translate-y-1 hover:border-text hover:shadow-lg">
-      <div className="relative h-40 overflow-hidden">
+      <div className="relative h-36 overflow-hidden sm:h-40 lg:h-48">
         <img
           src={course.image}
           alt={course.title}

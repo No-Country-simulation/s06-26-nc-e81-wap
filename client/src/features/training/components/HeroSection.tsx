@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Flame, Clock, Award, ArrowRight } from "lucide-react";
+import { Button } from "@/shared/ui/button";
 import { Skeleton } from "@/shared/ui/Skeleton";
 import type { HeroSectionProps } from "@/features/training/types/training.types";
 
@@ -8,8 +9,8 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
 
   if (isLoading) {
     return (
-      <section className="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-[2fr_1fr]">
-        <div className="flex min-h-70 flex-col justify-between rounded-xl bg-surface p-8">
+      <section className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr]">
+        <div className="flex min-h-60 flex-col justify-between rounded-xl bg-surface p-6 md:p-8">
           <div className="space-y-4">
             <Skeleton className="h-5 w-28" />
             <Skeleton className="h-9 w-3/4" />
@@ -18,14 +19,14 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
           </div>
           <div className="space-y-3">
             <Skeleton className="h-4 w-full" />
-            <Skeleton className="h-10 w-36" />
+            <Skeleton className="h-10 w-full sm:w-36" />
           </div>
         </div>
-        <div className="flex flex-col gap-6 rounded-xl border border-border bg-surface/80 p-6">
+        <div className="flex flex-col gap-4 rounded-xl border border-border bg-surface/80 p-6 sm:gap-6">
           <Skeleton className="h-6 w-40" />
           {Array.from({ length: 3 }).map((_, i) => (
             <div key={i} className="flex items-center gap-4">
-              <Skeleton className="h-10 w-10 rounded-lg" />
+              <Skeleton className="h-8 w-8 rounded-lg sm:h-10 sm:w-10" />
               <div className="flex-1 space-y-1">
                 <Skeleton className="h-3 w-20" />
                 <Skeleton className="h-5 w-24" />
@@ -41,21 +42,21 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
   if (!progress) return null;
 
   return (
-    <section className="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-[2fr_1fr]">
-      <div className="relative flex min-h-70 flex-col justify-between overflow-hidden rounded-xl bg-surface p-8">
+    <section className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr]">
+      <div className="relative flex min-h-60 flex-col justify-between overflow-hidden rounded-xl bg-surface p-6 md:p-8">
         <div className="relative z-10 mb-8">
           <span className="mb-4 inline-block rounded-full bg-primary px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary-foreground">
             {t("training.currentPath")}
           </span>
-          <h2 className="mb-2 text-3xl font-bold leading-tight tracking-tight text-text">
+          <h2 className="mb-2 text-2xl font-bold leading-tight tracking-tight text-text sm:text-3xl">
             {t("training.courseTitle")}
           </h2>
-          <p className="max-w-md text-base leading-6 text-text-secondary">
+          <p className="max-w-md text-sm leading-6 text-text-secondary sm:text-base">
             {t("training.courseDescription")}
           </p>
         </div>
 
-        <div className="relative z-10 flex items-end justify-between gap-4">
+        <div className="relative z-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
           <div className="flex-1">
             <div className="mb-2 flex items-center justify-between">
               <span className="text-xs font-semibold tracking-wider text-text">
@@ -73,52 +74,52 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
               />
             </div>
           </div>
-          <button className="whitespace-nowrap rounded-lg bg-text px-6 py-2.5 text-xs font-semibold tracking-wider text-bg transition-colors hover:bg-primary">
+          <Button variant="solid" size="sm" className="w-full sm:w-auto">
             {t("training.resumeLearning")}
-          </button>
+          </Button>
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 rounded-xl border border-border bg-surface/80 p-6 backdrop-blur">
-        <h3 className="m-0 text-xl font-semibold leading-7 text-text">
+      <div className="flex flex-col gap-4 rounded-xl border border-border bg-surface/80 p-6 backdrop-blur sm:gap-6">
+        <h3 className="m-0 text-lg font-semibold leading-7 text-text sm:text-xl">
           {t("training.learningActivity")}
         </h3>
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-              <Flame className="h-5 w-5" />
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary sm:h-10 sm:w-10">
+              <Flame className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
               <p className="text-xs font-semibold tracking-wider text-text-secondary">
                 {t("training.dailyStreak")}
               </p>
-              <p className="text-2xl font-semibold tracking-tight text-text">
+              <p className="text-xl font-semibold tracking-tight text-text sm:text-2xl">
                 {progress.dailyStreak} {t("training.days")}
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-              <Clock className="h-5 w-5" />
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary sm:h-10 sm:w-10">
+              <Clock className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
               <p className="text-xs font-semibold tracking-wider text-text-secondary">
                 {t("training.timeLearning")}
               </p>
-              <p className="text-2xl font-semibold tracking-tight text-text">
+              <p className="text-xl font-semibold tracking-tight text-text sm:text-2xl">
                 {progress.learningHours} {t("training.hours")}
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-              <Award className="h-5 w-5" />
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary sm:h-10 sm:w-10">
+              <Award className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
             <div>
               <p className="text-xs font-semibold tracking-wider text-text-secondary">
                 {t("training.badgesEarned")}
               </p>
-              <p className="text-2xl font-semibold tracking-tight text-text">
+              <p className="text-xl font-semibold tracking-tight text-text sm:text-2xl">
                 {progress.badgesEarned}
               </p>
             </div>

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@/shared/ui/button";
 import { Skeleton } from "@/shared/ui/Skeleton";
 import type { MainHighlightCardProps } from "@/features/dashboard/types/dashboard.types";
 
@@ -31,12 +32,9 @@ export function MainHighlightCard({
     return (
       <div className="flex min-h-60 flex-col items-center justify-center gap-4 rounded-xl bg-surface p-6">
         <p className="text-sm text-text-secondary">{t("dashboard.error")}</p>
-        <button
-          onClick={onRetry}
-          className="cursor-pointer rounded-lg bg-text px-4 py-2 text-xs font-semibold text-bg transition-colors hover:bg-primary"
-        >
+        <Button variant="solid" size="sm" onClick={onRetry}>
           {t("dashboard.retry")}
-        </button>
+        </Button>
       </div>
     );
   }
@@ -48,12 +46,9 @@ export function MainHighlightCard({
         <p className="text-center text-sm text-text-secondary">
           {t("dashboard.noHighlight")}
         </p>
-        <button
-          onClick={() => navigate("/dashboard/experiencias")}
-          className="cursor-pointer rounded-lg bg-text px-4 py-2 text-xs font-semibold text-bg transition-colors hover:bg-primary"
-        >
+        <Button variant="solid" size="sm" onClick={() => navigate("/dashboard/experiencias")}>
           {t("dashboard.exploreExperiences")}
-        </button>
+        </Button>
       </div>
     );
   }
@@ -89,13 +84,9 @@ export function MainHighlightCard({
             </span>
           </div>
         )}
-        <button
-          onClick={() => navigate(highlight.ctaLink)}
-          className="flex cursor-pointer items-center gap-2 whitespace-nowrap rounded-lg bg-text px-5 py-2.5 text-xs font-semibold tracking-wider text-bg transition-colors hover:bg-primary"
-        >
+        <Button variant="solid" size="sm" onClick={() => navigate(highlight.ctaLink)}>
           {t("dashboard.cta.experiencias")}
-          <ArrowRight className="h-4 w-4" />
-        </button>
+        </Button>
       </div>
     </div>
   );
