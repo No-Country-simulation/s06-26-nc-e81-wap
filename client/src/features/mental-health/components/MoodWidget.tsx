@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { MirrorRound } from "lucide-react";
 import { Skeleton } from "@/shared/ui/Skeleton";
-import { DashboardCard } from "@/features/dashboard/components/DashboardCard";
+import { DashboardCard } from "@/shared/ui/DashboardCard";
 import { MOOD_EMOJI_LIST } from "@/features/mental-health/constants";
 import type { MoodWidgetProps } from "@/features/mental-health/types/mental-health.types";
 

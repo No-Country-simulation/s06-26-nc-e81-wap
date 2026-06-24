@@ -236,6 +236,23 @@
       "mood5": "Excellent"
     }
   },
+  "mentorship": {
+    "notifications": "Recent Activity",
+    "notificationEmpty": "No recent activity",
+    "upcoming": "Upcoming Sessions",
+    "upcomingEmpty": "You have no scheduled sessions",
+    "cta": "Schedule Mentorship",
+    "progress": "Your Progress",
+    "sessionsCompleted": "Sessions completed",
+    "totalHours": "Total hours",
+    "satisfactionRate": "Satisfaction",
+    "mentors": "Available Mentors",
+    "mentorsEmpty": "No mentors available right now",
+    "availableSlots": "{{count}} slot available",
+    "availableSlots_plural": "{{count}} slots available",
+    "mentorAreas": "Areas",
+    "tipTitle": "Tip of the Day"
+  },
   "employability": {
     "hero": {
       "title": "Boost Your Career",

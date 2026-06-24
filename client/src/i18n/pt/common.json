@@ -235,6 +235,23 @@
       "mood5": "Excelente"
     }
   },
+  "mentorship": {
+    "notifications": "Atividade Recente",
+    "notificationEmpty": "Nenhuma atividade recente",
+    "upcoming": "Próximas Sessões",
+    "upcomingEmpty": "Você não tem sessões agendadas",
+    "cta": "Agendar Mentoria",
+    "progress": "Seu Progresso",
+    "sessionsCompleted": "Sessões concluídas",
+    "totalHours": "Horas totais",
+    "satisfactionRate": "Satisfação",
+    "mentors": "Mentores Disponíveis",
+    "mentorsEmpty": "Nenhum mentor disponível no momento",
+    "availableSlots": "{{count}} vaga disponível",
+    "availableSlots_plural": "{{count}} vagas disponíveis",
+    "mentorAreas": "Áreas",
+    "tipTitle": "Dica do Dia"
+  },
   "employability": {
     "hero": {
       "title": "Eleve Sua Carreira",
