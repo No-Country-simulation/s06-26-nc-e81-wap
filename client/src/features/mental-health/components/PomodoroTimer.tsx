@@ -88,6 +88,7 @@ export function PomodoroTimer() {
       : t("mental-health.pomodoro.break");
 
   return (
+    <div id="pomodoro-timer">
     <SectionCard icon={Timer} label={t("mental-health.pomodoro.title")} variant="hero">
       <div className="mb-2">
         <span className="text-xs font-semibold uppercase tracking-wider text-text-secondary">
@@ -140,5 +141,6 @@ export function PomodoroTimer() {
         </Button>
       </div>
     </SectionCard>
+    </div>
   );
 }

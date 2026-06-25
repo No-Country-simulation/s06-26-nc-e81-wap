@@ -1,10 +1,10 @@
 {
   "app": {
-    "name": "App BiT",
-    "tagline": "Seu ecossistema de orientação pessoal"
+    "name": "Orienta360",
+    "tagline": "Seu ecossistema de orientação pessoal 360°"
   },
   "dashboard": {
-    "welcome": "Bem-vindo ao App BiT. Explore as seções do menu para acessar formação, empregabilidade, experiências, mentorias e saúde mental.",
+    "welcome": "Bem-vindo ao Orienta360. Explore as seções do menu para acessar formação, empregabilidade, experiências, mentorias e saúde mental.",
     "greeting": "Painel de {{name}}",
     "subtitle": "Aqui está um resumo da sua atividade na plataforma.",
     "defaultName": "Usuário",
@@ -165,7 +165,9 @@
     "search-placeholder": "Pesquisar na plataforma...",
     "or": "ou",
     "logout": "Sair",
-    "profile": "Perfil"
+    "profile": "Perfil",
+    "continue": "Continuar",
+    "close": "Fechar"
   },
   "training": {
     "currentPath": "Rota Atual",
@@ -202,7 +204,7 @@
     "hero": {
       "badge": "Mindful Engineering",
       "title": "Mindful Engineering",
-      "description": "Otimize seu desempenho cognitivo e proteja seu bem-estar emocional. App bit integra ferramentas de saúde mental projetadas especificamente para o fluxo de trabalho do desenvolvedor.",
+      "description": "Otimize seu desempenho cognitivo e proteja seu bem-estar emocional. Orienta360 integra ferramentas de saúde mental projetadas especificamente para o fluxo de trabalho do desenvolvedor.",
       "startMeditation": "Iniciar meditação 5 min",
       "scheduleMeditation": "Agendar meditação"
     },
@@ -233,6 +235,15 @@
       "mood3": "Regular",
       "mood4": "Bem",
       "mood5": "Excelente"
+    },
+    "salud": {
+      "title": "Orion — Seu Agente de Bem-Estar",
+      "subtitle": "Analisei seu estado de ânimo e tenho algo para você.",
+      "message": "Mensagem de Orion",
+      "suggestion": "Ação sugerida",
+      "cvvWarning": "⚠️ Seu bem-estar é primeiro",
+      "cvvMessage": "Percebemos que hoje não foi um bom dia. Se precisar conversar com alguém, o CVV (Centro de Valorização da Vida) está disponível 24h.",
+      "cvvButton": "Falar com CVV"
     }
   },
   "experiences": {
@@ -366,5 +377,20 @@
       "apply": "Candidatar",
       "noVacancies": "Nenhuma vaga disponível no momento."
     }
+  },
+  "orientation": {
+    "title": "Orion — Orientação 360°",
+    "description": "Analise seu perfil profissional e descubra oportunidades alinhadas com suas habilidades.",
+    "resultSubtitle": "Com base no seu perfil, a Orion identificou o seguinte:",
+    "loading": "Orion está processando seu perfil...",
+    "analyzePrompt": "Clique em analisar para que a Orion avalie seu perfil e mostre seu gap formativo, trajetória sugerida e vagas compatíveis.",
+    "analyzeButton": "Analisar meu perfil com Orion",
+    "gap": "Gap formativo",
+    "gapRemaining": "a cobrir",
+    "gapItems": "Áreas de melhoria",
+    "trajectory": "Trajetória sugerida",
+    "vacancies": "Vagas compatíveis",
+    "confidence": "Confiança da análise:",
+    "goToEmployability": "Ir para empregabilidade"
   }
 }

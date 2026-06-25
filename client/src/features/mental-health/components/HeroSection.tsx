@@ -1,10 +1,15 @@
 import { useTranslation } from "react-i18next"
-import { Brain, Sparkles } from "lucide-react"
+import { Brain, Sparkles, Calendar } from "lucide-react"
 import { Button } from "@/shared/ui/button"
 import { SectionCard } from "@/shared/ui/SectionCard"
 
 export function HeroSection() {
   const { t } = useTranslation()
+
+  const scrollToPomodoro = () => {
+    const el = document.getElementById("pomodoro-timer")
+    el?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
 
   return (
     <SectionCard icon={Brain} label={t("mental-health.hero.badge")} variant="hero" className="mb-6">
@@ -16,11 +21,12 @@ export function HeroSection() {
           {t("mental-health.hero.description")}
         </p>
         <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
-          <Button variant="solid" size="sm" className="w-full sm:w-auto">
+          <Button variant="solid" size="sm" className="w-full sm:w-auto" onClick={scrollToPomodoro}>
             <Sparkles className="mr-1.5 h-4 w-4" />
             {t("mental-health.hero.startMeditation")}
           </Button>
-          <Button variant="outline" size="sm" className="w-full sm:w-auto">
+          <Button variant="outline" size="sm" className="w-full sm:w-auto" onClick={scrollToPomodoro}>
+            <Calendar className="mr-1.5 h-4 w-4" />
             {t("mental-health.hero.scheduleMeditation")}
           </Button>
         </div>

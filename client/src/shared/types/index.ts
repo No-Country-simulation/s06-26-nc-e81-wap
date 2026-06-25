@@ -5,6 +5,8 @@ export interface User {
   nombre: string
   email: string
   idioma: Language
+  perfil?: string
+  nivel?: string
 }
 
 export interface AuthState {

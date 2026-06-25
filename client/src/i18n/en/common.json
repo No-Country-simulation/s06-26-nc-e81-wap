@@ -1,10 +1,10 @@
 {
   "app": {
-    "name": "App BiT",
-    "tagline": "Your personal orientation ecosystem"
+    "name": "Orienta360",
+    "tagline": "Your 360° personal orientation ecosystem"
   },
   "dashboard": {
-    "welcome": "Welcome to App BiT. Explore the menu sections to access training, employability, experiences, mentorship and mental health.",
+    "welcome": "Welcome to Orienta360. Explore the menu sections to access training, employability, experiences, mentorship and mental health.",
     "greeting": "{{name}}'s Dashboard",
     "subtitle": "Here's a summary of your activity on the platform.",
     "defaultName": "User",
@@ -71,7 +71,7 @@
     "loginLink": "Sign in",
     "onboarding": "Complete Profile",
     "onboardingSkip": "Skip to dashboard",
-    "heroTitle": "App BiT",
+    "heroTitle": "Orienta360",
     "heroDescription": "Your next big challenge awaits. Discover opportunities, connect with mentors, and let your talent flow without limits.",
     "errorRequired": "This field is required",
     "errorEmail": "Invalid email address",
@@ -166,7 +166,9 @@
     "search-placeholder": "Search the platform...",
     "or": "or",
     "logout": "Log out",
-    "profile": "Profile"
+    "profile": "Profile",
+    "continue": "Continue",
+    "close": "Close"
   },
   "training": {
     "currentPath": "Current Path",
@@ -203,7 +205,7 @@
     "hero": {
       "badge": "Mindful Engineering",
       "title": "Mindful Engineering",
-      "description": "Optimize your cognitive performance and protect your emotional well-being. App bit integrates mental health tools designed specifically for the developer workflow.",
+      "description": "Optimize your cognitive performance and protect your emotional well-being. Orienta360 integrates mental health tools designed specifically for the developer workflow.",
       "startMeditation": "Start 5 min meditation",
       "scheduleMeditation": "Schedule meditation"
     },
@@ -234,6 +236,15 @@
       "mood3": "Okay",
       "mood4": "Good",
       "mood5": "Excellent"
+    },
+    "salud": {
+      "title": "Orion — Your Wellness Agent",
+      "subtitle": "I've analyzed your mood and have something for you.",
+      "message": "Orion's message",
+      "suggestion": "Suggested action",
+      "cvvWarning": "⚠️ Your well-being comes first",
+      "cvvMessage": "We noticed today hasn't been a good day. If you need to talk to someone, CVV (Life Valorization Center) is available 24/7.",
+      "cvvButton": "Talk to CVV"
     }
   },
   "experiences": {
@@ -367,5 +378,20 @@
       "apply": "Apply",
       "noVacancies": "No vacancies available at the moment."
     }
+  },
+  "orientation": {
+    "title": "Orion — 360° Orientation",
+    "description": "Analyze your professional profile and discover opportunities aligned with your skills.",
+    "resultSubtitle": "Based on your profile, Orion has identified the following:",
+    "loading": "Orion is processing your profile...",
+    "analyzePrompt": "Click analyze to let Orion evaluate your profile and show your training gap, suggested trajectory, and compatible vacancies.",
+    "analyzeButton": "Analyze my profile with Orion",
+    "gap": "Training gap",
+    "gapRemaining": "to cover",
+    "gapItems": "Areas for improvement",
+    "trajectory": "Suggested trajectory",
+    "vacancies": "Compatible vacancies",
+    "confidence": "Analysis confidence:",
+    "goToEmployability": "Go to employability"
   }
 }

@@ -1,4 +1,4 @@
-# App BiT — Frontend
+# Orienta360 — Frontend
 
 ## Stack
 

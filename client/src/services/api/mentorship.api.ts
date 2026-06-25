@@ -93,7 +93,7 @@ const MOCK_MENTORSHIP: MentorshipData = {
   ],
   tip: {
     text: 'No necesitas saberlo todo para empezar. Los mejores mentores buscan potencial, no perfección. Muestra tu curiosidad y ganas de aprender.',
-    author: 'App BiT',
+    author: 'Orienta360',
   },
 }
 
