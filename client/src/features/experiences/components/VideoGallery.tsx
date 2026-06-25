@@ -1,15 +1,15 @@
-import { useState } from "react"
-import { useTranslation } from "react-i18next"
-import { Film } from "lucide-react"
-import { cn } from "@/shared/utils/cn"
-import { Skeleton } from "@/shared/ui/Skeleton"
-import { VideoCard } from "@/features/experiences/components/VideoCard"
-import { EXPERIENCE_FILTERS } from "@/features/experiences/constants"
-import type { VideoGalleryProps } from "@/features/experiences/types/experiences.types"
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Film, ChevronDown } from "lucide-react";
+import { cn } from "@/shared/utils/cn";
+import { Skeleton } from "@/shared/ui/Skeleton";
+import { VideoCard } from "@/features/experiences/components/VideoCard";
+import { EXPERIENCE_FILTERS } from "@/features/experiences/constants";
+import type { VideoGalleryProps } from "@/features/experiences/types/experiences.types";
 
 export function VideoGallery({ videos, isLoading, onPlay }: VideoGalleryProps) {
-  const { t } = useTranslation()
-  const [activeFilter, setActiveFilter] = useState<string>("all")
+  const { t } = useTranslation();
+  const [activeFilter, setActiveFilter] = useState<string>("all");
 
   if (isLoading) {
     return (
@@ -19,15 +19,21 @@ export function VideoGallery({ videos, isLoading, onPlay }: VideoGalleryProps) {
             <Skeleton className="h-7 w-48" />
             <Skeleton className="h-4 w-64" />
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-0 border-b border-border">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Skeleton key={i} className="h-7 w-20 rounded-full" />
+              <Skeleton
+                key={i}
+                className="h-7 w-20 rounded-none border-b-2 border-transparent"
+              />
             ))}
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="overflow-hidden rounded-xl border border-border bg-surface">
+            <div
+              key={i}
+              className="overflow-hidden rounded-xl border border-border bg-surface"
+            >
               <Skeleton className="aspect-video w-full rounded-none" />
               <div className="space-y-3 p-4">
                 <Skeleton className="h-4 w-3/4" />
@@ -46,7 +52,7 @@ export function VideoGallery({ videos, isLoading, onPlay }: VideoGalleryProps) {
           ))}
         </div>
       </div>
-    )
+    );
   }
 
   if (videos.length === 0) {
@@ -65,13 +71,15 @@ export function VideoGallery({ videos, isLoading, onPlay }: VideoGalleryProps) {
           </p>
         </div>
       </div>
-    )
+    );
   }
+
+  const showDropdown = EXPERIENCE_FILTERS.length > 6;
 
   const filteredVideos =
     activeFilter === "all"
       ? videos
-      : videos.filter((v) => v.tags.includes(activeFilter))
+      : videos.filter((v) => v.tags.includes(activeFilter));
 
   return (
     <div className="mb-8">
@@ -87,22 +95,39 @@ export function VideoGallery({ videos, isLoading, onPlay }: VideoGalleryProps) {
             {t("experiences.gallery.subtitle")}
           </p>
         </div>
-        <div className="flex gap-2 overflow-x-auto rounded-lg bg-muted p-1">
-          {EXPERIENCE_FILTERS.map((filter) => (
-            <button
-              key={filter}
-              className={cn(
-                "whitespace-nowrap rounded-md px-3 py-1.5 text-xs font-semibold tracking-wider transition-all",
-                activeFilter === filter
-                  ? "bg-bg text-text shadow-sm"
-                  : "bg-transparent text-muted-foreground hover:bg-surface",
-              )}
-              onClick={() => setActiveFilter(filter)}
+        {showDropdown ? (
+          <div className="relative w-full md:w-auto">
+            <select
+              value={activeFilter}
+              onChange={(e) => setActiveFilter(e.target.value)}
+              className="w-full cursor-pointer appearance-none rounded-lg border border-border bg-surface px-3 py-2 pr-8 text-xs font-semibold tracking-wider text-text outline-none transition-colors hover:border-primary focus:border-primary md:w-auto"
             >
-              {t(`experiences.filters.${filter}`)}
-            </button>
-          ))}
-        </div>
+              {EXPERIENCE_FILTERS.map((filter) => (
+                <option key={filter} value={filter}>
+                  {t(`experiences.filters.${filter}`)}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-2 top-1/2 h-4 w-4 -translate-y-1/2 text-text-secondary" />
+          </div>
+        ) : (
+          <div className="flex gap-0 overflow-x-auto border-b border-border">
+            {EXPERIENCE_FILTERS.map((filter) => (
+              <button
+                key={filter}
+                className={cn(
+                  "cursor-pointer whitespace-nowrap border-b-2 px-4 py-2.5 text-xs font-semibold tracking-wider transition-all",
+                  activeFilter === filter
+                    ? "border-primary text-primary"
+                    : "border-transparent text-text-secondary hover:border-primary/50 hover:text-primary",
+                )}
+                onClick={() => setActiveFilter(filter)}
+              >
+                {t(`experiences.filters.${filter}`)}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
       {filteredVideos.length === 0 ? (
         <div className="flex flex-col items-center justify-center rounded-xl bg-surface p-12">
@@ -119,5 +144,5 @@ export function VideoGallery({ videos, isLoading, onPlay }: VideoGalleryProps) {
         </div>
       )}
     </div>
-  )
+  );
 }

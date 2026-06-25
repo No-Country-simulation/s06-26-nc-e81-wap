@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Quote } from "lucide-react";
-import { DashboardCard } from "@/features/dashboard/components/DashboardCard";
+import { WidgetCard } from "@/shared/ui/WidgetCard";
 import { useDailyQuote } from "@/features/dashboard/hooks/useDailyQuote";
 
 export function DailyQuote() {
@@ -8,12 +8,12 @@ export function DailyQuote() {
   const quote = useDailyQuote();
 
   return (
-    <DashboardCard icon={Quote} label={t("dashboard.extra.quoteOfTheDay")}>
+    <WidgetCard icon={Quote} label={t("dashboard.extra.quoteOfTheDay")}>
       <div className="flex h-full items-center">
         <p className="text-sm font-semibold tracking-tight text-text italic leading-relaxed">
           &ldquo;{quote}&rdquo;
         </p>
       </div>
-    </DashboardCard>
+    </WidgetCard>
   );
 }

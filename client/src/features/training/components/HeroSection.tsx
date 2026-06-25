@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { Flame, Clock, Award, ArrowRight } from "lucide-react";
+import { Brain, Flame, Clock, Award, ArrowRight, Activity } from "lucide-react";
 import { Button } from "@/shared/ui/button";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { SectionCard } from "@/shared/ui/SectionCard";
 import type { HeroSectionProps } from "@/features/training/types/training.types";
 
 export function HeroSection({ progress, isLoading }: HeroSectionProps) {
@@ -22,8 +23,8 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
             <Skeleton className="h-10 w-full sm:w-36" />
           </div>
         </div>
-        <div className="flex flex-col gap-4 rounded-xl border border-border bg-surface/80 p-6 sm:gap-6">
-          <Skeleton className="h-6 w-40" />
+        <div className="flex flex-col gap-4 rounded-xl bg-surface p-6 md:p-8">
+          <Skeleton className="h-4 w-40" />
           {Array.from({ length: 3 }).map((_, i) => (
             <div key={i} className="flex items-center gap-4">
               <Skeleton className="h-8 w-8 rounded-lg sm:h-10 sm:w-10" />
@@ -36,18 +37,20 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
           <Skeleton className="mt-auto h-4 w-28" />
         </div>
       </section>
-    )
+    );
   }
 
   if (!progress) return null;
 
   return (
     <section className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr]">
-      <div className="relative flex min-h-60 flex-col justify-between overflow-hidden rounded-xl bg-surface p-6 md:p-8">
+      <SectionCard
+        icon={Brain}
+        label={t("training.currentPath")}
+        variant="hero"
+        className="flex min-h-60 flex-col justify-between"
+      >
         <div className="relative z-10 mb-8">
-          <span className="mb-4 inline-block rounded-full bg-primary px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary-foreground">
-            {t("training.currentPath")}
-          </span>
           <h2 className="mb-2 text-2xl font-bold leading-tight tracking-tight text-text sm:text-3xl">
             {t("training.courseTitle")}
           </h2>
@@ -78,12 +81,13 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
             {t("training.resumeLearning")}
           </Button>
         </div>
-      </div>
+      </SectionCard>
 
-      <div className="flex flex-col gap-4 rounded-xl border border-border bg-surface/80 p-6 backdrop-blur sm:gap-6">
-        <h3 className="m-0 text-lg font-semibold leading-7 text-text sm:text-xl">
-          {t("training.learningActivity")}
-        </h3>
+      <SectionCard
+        icon={Activity}
+        label={t("training.learningActivity")}
+        variant="hero"
+      >
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3 sm:gap-4">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary sm:h-10 sm:w-10">
@@ -129,7 +133,7 @@ export function HeroSection({ progress, isLoading }: HeroSectionProps) {
           {t("training.viewStats")}
           <ArrowRight className="h-4 w-4" />
         </button>
-      </div>
+      </SectionCard>
     </section>
   );
 }

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Bell } from "lucide-react";
 import { cn } from "@/shared/utils/cn";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { SectionCard } from "@/shared/ui/SectionCard";
 import type { NotificationPanelProps } from "@/features/mentorship/types/mentorship.types";
 import { typeIcons } from "../constants";
 
@@ -13,9 +14,9 @@ export function NotificationPanel({
 
   if (isLoading) {
     return (
-      <div className="rounded-xl border border-border bg-surface p-5">
+      <div className="rounded-xl bg-surface p-6 md:p-8">
         <div className="mb-4 flex items-center gap-2">
-          <Bell className="h-4 w-4 text-primary" />
+          <Bell className="h-6 w-6 text-primary" />
           <Skeleton className="h-4 w-32" />
         </div>
         <div className="space-y-3">
@@ -38,13 +39,7 @@ export function NotificationPanel({
   }
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-5">
-      <div className="mb-4 flex items-center gap-2">
-        <Bell className="h-4 w-4 text-primary" />
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-          {t("mentorship.notifications")}
-        </p>
-      </div>
+    <SectionCard icon={Bell} label={t("mentorship.notifications")} variant="hero">
       <div className="space-y-3">
         {notifications.map((n) => {
           const Icon = typeIcons[n.type];
@@ -86,6 +81,6 @@ export function NotificationPanel({
           );
         })}
       </div>
-    </div>
+    </SectionCard>
   );
 }

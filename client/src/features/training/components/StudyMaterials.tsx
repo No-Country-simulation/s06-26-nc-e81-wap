@@ -3,6 +3,8 @@ import { FileText, Download } from "lucide-react";
 import { cn } from "@/shared/utils/cn";
 import { Avatar, AvatarImage, AvatarFallback } from "@/shared/ui/avatar";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { Timeline } from "@/shared/ui/Timeline";
+import { TimelineItem } from "@/shared/ui/TimelineItem";
 import { materialIcon } from "@/features/training/constants";
 import type { StudyMaterialsProps } from "@/features/training/types/training.types";
 
@@ -39,19 +41,18 @@ export function StudyMaterials({
         <div>
           <Skeleton className="mb-6 h-8 w-52" />
           <div className="rounded-xl border border-border bg-surface p-6">
-            <div className="relative flex flex-col gap-8 border-l-2 border-border pl-6">
+            <Timeline gap="lg" lineColor="border">
               {Array.from({ length: 2 }).map((_, i) => (
-                <div key={i} className="relative space-y-2">
-                  <Skeleton className="absolute -left-2 top-0 h-4 w-4 rounded-full" />
+                <TimelineItem key={i} className="space-y-2">
                   <Skeleton className="h-4 w-40" />
                   <Skeleton className="h-4 w-3/4" />
                   <Skeleton className="h-3 w-full" />
-                </div>
-              ))}
-            </div>
-          </div>
+              </TimelineItem>
+            ))}
+          </Timeline>
         </div>
-      </section>
+      </div>
+    </section>
     );
   }
 
@@ -94,18 +95,9 @@ export function StudyMaterials({
           {t("training.upcomingWorkshops")}
         </h3>
         <div className="rounded-xl border border-border bg-surface p-6">
-          <div className="relative flex flex-col gap-8 border-l-2 border-primary pl-6">
+          <Timeline gap="lg">
             {workshops.map((workshop) => (
-              <div
-                key={workshop.id}
-                className={cn("relative", !workshop.isUpcoming && "opacity-60")}
-              >
-                <div
-                  className={cn(
-                    "absolute -left-2 top-0 h-4 w-4 rounded-full border-4 border-surface",
-                    workshop.isUpcoming ? "bg-primary" : "bg-muted-foreground",
-                  )}
-                />
+              <TimelineItem key={workshop.id} active={workshop.isUpcoming}>
                 <p
                   className={cn(
                     "mb-1 font-mono text-sm leading-5",
@@ -138,9 +130,9 @@ export function StudyMaterials({
                     </span>
                   </div>
                 )}
-              </div>
+              </TimelineItem>
             ))}
-          </div>
+          </Timeline>
           <button className="mt-8 w-full rounded-lg border border-border bg-transparent px-4 py-2 text-xs font-semibold tracking-wider transition-colors hover:bg-muted">
             {t("training.viewAllEvents")}
           </button>

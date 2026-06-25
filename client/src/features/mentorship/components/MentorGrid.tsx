@@ -4,6 +4,7 @@ import { cn } from "@/shared/utils/cn";
 import { Avatar, AvatarImage, AvatarFallback } from "@/shared/ui/avatar";
 import { Badge } from "@/shared/ui/badge";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { SectionCard } from "@/shared/ui/SectionCard";
 import type { MentorGridProps } from "@/features/mentorship/types/mentorship.types";
 
 export function MentorGrid({ mentors, isLoading }: MentorGridProps) {
@@ -11,9 +12,9 @@ export function MentorGrid({ mentors, isLoading }: MentorGridProps) {
 
   if (isLoading) {
     return (
-      <div className="rounded-xl border border-border bg-surface p-5">
+      <div className="rounded-xl bg-surface p-6 md:p-8">
         <div className="mb-4 flex items-center gap-2">
-          <Users className="h-4 w-4 text-text-secondary" />
+          <Users className="h-6 w-6 text-primary" />
           <Skeleton className="h-4 w-36" />
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -43,23 +44,19 @@ export function MentorGrid({ mentors, isLoading }: MentorGridProps) {
 
   if (!mentors || mentors.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-xl border border-border bg-surface p-8">
-        <Users className="mb-2 h-8 w-8 text-text-secondary" />
-        <p className="text-sm text-text-secondary">
-          {t("mentorship.mentorsEmpty")}
-        </p>
-      </div>
+      <SectionCard icon={Users} label={t("mentorship.mentors")}>
+        <div className="flex flex-col items-center justify-center py-8">
+          <Users className="mb-2 h-8 w-8 text-text-secondary" />
+          <p className="text-sm text-text-secondary">
+            {t("mentorship.mentorsEmpty")}
+          </p>
+        </div>
+      </SectionCard>
     );
   }
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-5">
-      <div className="mb-4 flex items-center gap-2">
-        <Users className="h-4 w-4 text-primary" />
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-          {t("mentorship.mentors")}
-        </p>
-      </div>
+    <SectionCard icon={Users} label={t("mentorship.mentors")}>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {mentors.map((m) => {
           const initials = m.name
@@ -118,6 +115,6 @@ export function MentorGrid({ mentors, isLoading }: MentorGridProps) {
           );
         })}
       </div>
-    </div>
+    </SectionCard>
   );
 }

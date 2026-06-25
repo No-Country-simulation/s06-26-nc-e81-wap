@@ -1,20 +1,38 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, ExternalLink } from "lucide-react";
-import type { DashboardCardProps } from "@/features/dashboard/types/dashboard.types";
+import type { WidgetCardProps } from "@/shared/ui/types";
+import { cn } from "@/shared/utils/cn";
 
-export function DashboardCard({
+export function WidgetCard({
   icon: Icon,
   label,
   children,
   cta,
-}: DashboardCardProps) {
+  variant = "default",
+}: WidgetCardProps) {
   const navigate = useNavigate();
+  const isBlue = variant === "blue";
 
   return (
-    <div className="relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface p-5">
-      <Icon className="absolute -bottom-4 -right-4 h-28 w-28 text-primary opacity-10" />
+    <div
+      className={cn(
+        "relative flex h-full flex-col overflow-hidden rounded-xl p-5",
+        isBlue ? "bg-primary/10" : "border border-border bg-surface",
+      )}
+    >
+      <Icon
+        className={cn(
+          "absolute -bottom-4 -right-4 h-28 w-28 opacity-10",
+          isBlue ? "text-shadow-indigo-900" : "text-primary",
+        )}
+      />
       {label && (
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary">
+        <p
+          className={cn(
+            "text-xs font-semibold uppercase tracking-wider",
+            isBlue ? "text-primary" : "text-primary",
+          )}
+        >
           {label}
         </p>
       )}

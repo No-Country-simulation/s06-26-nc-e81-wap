@@ -262,6 +262,8 @@
       "attendees": "+{{count}} attendees"
     },
     "widget": {
+      "participatedLabel": "YOU HAVE WATCHED",
+      "thisMonth": "Experiences this month.",
       "videos": "Experiences available",
       "noEvents": "No upcoming events"
     }

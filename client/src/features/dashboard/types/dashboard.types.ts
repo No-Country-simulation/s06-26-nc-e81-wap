@@ -1,4 +1,4 @@
-import type { ReactNode, ComponentType } from "react";
+import type { ComponentType } from "react";
 
 // ── Data types ──
 
@@ -45,13 +45,6 @@ export type DashboardData = {
 export type Cta =
   | { label: string; to: string }
   | { label: string; href: string }
-
-export type DashboardCardProps = {
-  icon: ComponentType<{ className?: string }>
-  label?: string
-  children: ReactNode
-  cta?: Cta
-}
 
 export type WidgetCardProps = {
   widget: WidgetData | null

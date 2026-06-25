@@ -297,6 +297,8 @@
       "attendees": "+{{count}} asistentes"
     },
     "widget": {
+      "participatedLabel": "HAS OBSERVADO",
+      "thisMonth": "Experiencias este mes.",
       "videos": "Experiencias disponibles",
       "noEvents": "No hay próximos eventos"
     }

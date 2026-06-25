@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Play, Pause, RotateCcw } from "lucide-react";
+import { Timer, Play, Pause, RotateCcw } from "lucide-react";
 import { Button } from "@/shared/ui/button";
+import { SectionCard } from "@/shared/ui/SectionCard";
 import {
   POMODORO_WORK,
   POMODORO_BREAK,
@@ -87,13 +88,7 @@ export function PomodoroTimer() {
       : t("mental-health.pomodoro.break");
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-6">
-      <div className="mb-4">
-        <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-          {t("mental-health.pomodoro.title")}
-        </span>
-      </div>
-
+    <SectionCard icon={Timer} label={t("mental-health.pomodoro.title")} variant="hero">
       <div className="mb-2">
         <span className="text-xs font-semibold uppercase tracking-wider text-text-secondary">
           {phaseLabel}
@@ -144,6 +139,6 @@ export function PomodoroTimer() {
           {t("mental-health.pomodoro.reset")}
         </Button>
       </div>
-    </div>
+    </SectionCard>
   );
 }

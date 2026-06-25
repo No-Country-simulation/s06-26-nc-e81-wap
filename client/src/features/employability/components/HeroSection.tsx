@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { TrendingUp, Target } from "lucide-react";
+import { StarIcon, Target } from "lucide-react";
 import { Button } from "@/shared/ui/button";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { SectionCard } from "@/shared/ui/SectionCard";
+import { WidgetCard } from "@/shared/ui/WidgetCard";
 import type { HeroSectionProps } from "@/features/employability/types/employability.types";
 
 export function HeroSection({
@@ -25,7 +27,7 @@ export function HeroSection({
             <Skeleton className="h-10 w-full sm:w-36" />
           </div>
         </div>
-        <div className="flex flex-col justify-between rounded-xl bg-surface p-6 md:p-8">
+        <div className="flex flex-col justify-between rounded-xl bg-primary/10 p-5">
           <Skeleton className="h-6 w-32" />
           <Skeleton className="h-16 w-24" />
           <div className="space-y-2">
@@ -39,7 +41,10 @@ export function HeroSection({
 
   return (
     <section className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr]">
-      <div className="relative flex min-h-60 flex-col justify-center overflow-hidden rounded-xl bg-surface p-6 md:p-8 lg:min-h-70">
+      <SectionCard
+        variant="hero"
+        className="flex min-h-60 flex-col justify-center lg:min-h-70"
+      >
         <div className="relative z-10">
           <h2 className="mb-2 text-2xl font-bold leading-tight tracking-tight text-text sm:text-3xl">
             {t("employability.hero.title")}
@@ -56,37 +61,38 @@ export function HeroSection({
             </Button>
           </div>
         </div>
-        <div className="absolute right-0 top-0 h-full w-1/3 opacity-5 bg-[radial-gradient(circle,var(--color-text)_1px,transparent_1px)] bg-size-[20px_20px]" />
-      </div>
+      </SectionCard>
 
-      <div className="flex flex-col justify-between rounded-xl bg-primary/10 p-6 md:p-8">
-        <div className="flex items-center gap-2">
-          <TrendingUp className="h-5 w-5 text-primary" />
-          <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-            {t("employability.hero.readinessScore")}
-          </span>
-        </div>
-        <div className="text-4xl font-black leading-none text-primary md:text-6xl">
-          {readinessScore}%
-        </div>
-        <div>
-          <div className="mb-1 flex items-center justify-between">
-            <span className="flex items-center gap-2 text-xs font-semibold tracking-wider text-primary">
-              <Target className="h-4 w-4" />
-              {t("employability.hero.profileStrength")}
-            </span>
-            <span className="text-xs font-semibold tracking-wider text-primary">
-              {profileStrength}/100
-            </span>
+      <WidgetCard
+        icon={StarIcon}
+        label={t("employability.hero.readinessScore")}
+        variant="blue"
+      >
+        <div className="flex h-full flex-col">
+          <div className="flex flex-1 items-center justify-center">
+            <div className="text-4xl font-black leading-none text-primary md:text-6xl">
+              {readinessScore}%
+            </div>
           </div>
-          <div className="h-1.5 w-full overflow-hidden rounded-full bg-primary/20">
-            <div
-              className="h-full rounded-full bg-primary transition-all duration-1000 ease-out"
-              style={{ width: `${profileStrength}%` }}
-            />
+          <div>
+            <div className="mb-1 flex items-center justify-between">
+              <span className="flex items-center gap-2 text-xs font-semibold tracking-wider text-primary">
+                <Target className="h-4 w-4" />
+                {t("employability.hero.profileStrength")}
+              </span>
+              <span className="text-xs font-semibold tracking-wider text-primary">
+                {profileStrength}/100
+              </span>
+            </div>
+            <div className="h-1.5 w-full overflow-hidden rounded-full bg-primary/20">
+              <div
+                className="h-full rounded-full bg-primary transition-all duration-1000 ease-out"
+                style={{ width: `${profileStrength}%` }}
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </WidgetCard>
     </section>
   );
 }

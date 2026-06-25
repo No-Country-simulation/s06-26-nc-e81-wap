@@ -22,11 +22,13 @@ export function ExperiencesPage() {
           <div className="md:col-span-3">
             <EventsTimeline events={events} isLoading={isLoading} />
           </div>
-          <FeaturedWidget
-            upcomingEvent={upcomingEvent}
-            totalVideos={totalVideos}
-            isLoading={isLoading}
-          />
+          <div className="self-start">
+            <FeaturedWidget
+              upcomingEvent={upcomingEvent}
+              totalVideos={totalVideos}
+              isLoading={isLoading}
+            />
+          </div>
         </div>
       </div>
       <VideoModal youtubeId={selectedVideo} onClose={() => setSelectedVideo(null)} />

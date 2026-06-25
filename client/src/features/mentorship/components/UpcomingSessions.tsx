@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { cn } from "@/shared/utils/cn";
 import { Button } from "@/shared/ui/button";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { SectionCard } from "@/shared/ui/SectionCard";
 import type { UpcomingSessionsProps } from "@/features/mentorship/types/mentorship.types";
 import { statusStyles } from "../constants";
 
@@ -16,9 +17,9 @@ export function UpcomingSessions({
 
   if (isLoading) {
     return (
-      <div className="flex h-full flex-col rounded-xl border border-border bg-surface p-5">
+      <div className="flex h-full flex-col rounded-xl bg-surface p-6 md:p-8">
         <div className="mb-4 flex items-center gap-2">
-          <Calendar className="h-4 w-4 text-text-secondary" />
+          <Calendar className="h-6 w-6 text-primary" />
           <Skeleton className="h-4 w-36" />
         </div>
         <div className="flex-1 space-y-3">
@@ -39,14 +40,11 @@ export function UpcomingSessions({
   }
 
   return (
-    <div className="flex h-full flex-col rounded-xl border border-border bg-surface p-5">
-      <div className="mb-4 flex items-center gap-2">
-        <Calendar className="h-4 w-4 text-primary" />
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-          {t("mentorship.upcoming")}
-        </p>
-      </div>
-
+    <SectionCard
+      icon={Calendar}
+      label={t("mentorship.upcoming")}
+      className="flex h-full flex-col"
+    >
       <div className="flex-1 space-y-3">
         {!sessions || sessions.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-8">
@@ -94,6 +92,6 @@ export function UpcomingSessions({
         <Plus className="h-4 w-4" />
         {t("mentorship.cta")}
       </Button>
-    </div>
+    </SectionCard>
   );
 }

@@ -3,6 +3,9 @@ import { Calendar, Users } from "lucide-react"
 import { cn } from "@/shared/utils/cn"
 import { Button } from "@/shared/ui/button"
 import { Skeleton } from "@/shared/ui/Skeleton"
+import { SectionCard } from "@/shared/ui/SectionCard"
+import { Timeline } from "@/shared/ui/Timeline"
+import { TimelineItem } from "@/shared/ui/TimelineItem"
 import type { EventsTimelineProps } from "@/features/experiences/types/experiences.types"
 
 export function EventsTimeline({ events, isLoading }: EventsTimelineProps) {
@@ -10,53 +13,42 @@ export function EventsTimeline({ events, isLoading }: EventsTimelineProps) {
 
   if (isLoading) {
     return (
-      <div className="rounded-xl border border-border bg-surface p-5">
+      <div className="rounded-xl bg-surface p-6 md:p-8">
         <div className="mb-4 flex items-center gap-2">
-          <Calendar className="h-4 w-4 text-text-secondary" />
+          <Calendar className="h-6 w-6 text-primary" />
           <Skeleton className="h-4 w-36" />
         </div>
-        <div className="space-y-6 border-l-2 border-border pl-5">
+        <Timeline lineColor="border">
           {Array.from({ length: 2 }).map((_, i) => (
-            <div key={i} className="relative space-y-2">
-              <Skeleton className="absolute -left-[22px] top-0 h-4 w-4 rounded-full" />
+            <TimelineItem key={i} className="space-y-2">
               <Skeleton className="h-4 w-32" />
               <Skeleton className="h-4 w-3/4" />
               <Skeleton className="h-3 w-full" />
-            </div>
+            </TimelineItem>
           ))}
-        </div>
+        </Timeline>
       </div>
     )
   }
 
   if (!events || events.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-xl border border-border bg-surface p-8">
-        <Calendar className="mb-2 h-8 w-8 text-text-secondary" />
-        <p className="text-sm text-text-secondary">
-          {t("experiences.events.empty")}
-        </p>
-      </div>
+      <SectionCard icon={Calendar} label={t("experiences.events.title")} variant="hero">
+        <div className="flex flex-col items-center justify-center py-8">
+          <Calendar className="mb-2 h-8 w-8 text-text-secondary" />
+          <p className="text-sm text-text-secondary">
+            {t("experiences.events.empty")}
+          </p>
+        </div>
+      </SectionCard>
     )
   }
 
   return (
-    <div className="rounded-xl border border-border bg-surface p-5">
-      <div className="mb-4 flex items-center gap-2">
-        <Calendar className="h-4 w-4 text-primary" />
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-          {t("experiences.events.title")}
-        </p>
-      </div>
-      <div className="relative flex flex-col gap-6 border-l-2 border-primary pl-5">
+    <SectionCard icon={Calendar} label={t("experiences.events.title")} variant="hero">
+      <Timeline>
         {events.map((event) => (
-          <div key={event.id} className={cn("relative", !event.isUpcoming && "opacity-60")}>
-            <div
-              className={cn(
-                "absolute -left-[22px] top-0 h-4 w-4 rounded-full border-4 border-surface",
-                event.isUpcoming ? "bg-primary" : "bg-muted-foreground",
-              )}
-            />
+          <TimelineItem key={event.id} active={event.isUpcoming}>
             <p
               className={cn(
                 "mb-1 font-mono text-xs font-semibold tracking-wider",
@@ -92,9 +84,9 @@ export function EventsTimeline({ events, isLoading }: EventsTimelineProps) {
                 {t("experiences.events.recorded")}
               </span>
             )}
-          </div>
+          </TimelineItem>
         ))}
-      </div>
-    </div>
+      </Timeline>
+    </SectionCard>
   )
 }

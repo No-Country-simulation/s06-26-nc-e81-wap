@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { Edit, TriangleAlert, Lightbulb, ArrowRight } from "lucide-react";
+import { Edit, TriangleAlert, Lightbulb, ArrowRight, FileText, Radio } from "lucide-react";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { SectionCard } from "@/shared/ui/SectionCard";
 import type { ResumeAnalyticsProps } from "@/features/employability/types/employability.types";
 
 export function ResumeAnalytics({
@@ -13,15 +14,12 @@ export function ResumeAnalytics({
   if (isLoading) {
     return (
       <section className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr]">
-        <div className="rounded-xl border border-border bg-surface">
-          <div className="flex items-center justify-between border-b border-border p-6">
-            <div className="space-y-1">
-              <Skeleton className="h-6 w-40" />
-              <Skeleton className="h-4 w-36" />
-            </div>
-            <Skeleton className="h-8 w-24" />
+        <div className="rounded-xl bg-surface p-6 md:p-8">
+          <div className="mb-6 space-y-1">
+            <Skeleton className="h-4 w-40" />
+            <Skeleton className="h-4 w-36" />
           </div>
-          <div className="grid grid-cols-2 gap-4 p-6 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {Array.from({ length: 4 }).map((_, i) => (
               <div key={i} className="space-y-2 rounded-lg bg-muted p-4">
                 <Skeleton className="h-3 w-20" />
@@ -30,11 +28,11 @@ export function ResumeAnalytics({
             ))}
           </div>
         </div>
-        <div className="rounded-xl border border-border bg-surface">
-          <div className="border-b border-border p-6">
-            <Skeleton className="h-6 w-40" />
+        <div className="rounded-xl bg-surface p-6 md:p-8">
+          <div className="mb-6">
+            <Skeleton className="h-4 w-40" />
           </div>
-          <div className="space-y-2 p-4">
+          <div className="space-y-2">
             {Array.from({ length: 3 }).map((_, i) => (
               <div key={i} className="space-y-1 p-3">
                 <Skeleton className="h-4 w-48" />
@@ -62,22 +60,17 @@ export function ResumeAnalytics({
 
   return (
     <section className="mb-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-[2fr_1fr]">
-      <div className="rounded-xl border border-border bg-surface">
-        <div className="flex items-center justify-between border-b border-border p-6">
-          <div>
-            <h3 className="text-xl font-semibold leading-7 text-text">
-              {t("employability.resume.title")}
-            </h3>
-            <p className="text-sm leading-5 text-text-secondary">
-              {t("employability.resume.lastUpdated")}
-            </p>
-          </div>
+      <SectionCard icon={FileText} label={t("employability.resume.title")} variant="hero">
+        <div className="mb-6 flex items-center justify-between">
+          <p className="text-sm leading-5 text-text-secondary">
+            {t("employability.resume.lastUpdated")}
+          </p>
           <button className="flex items-center gap-1 bg-transparent text-xs font-semibold tracking-wider text-primary">
             <Edit className="h-4 w-4" />
             {t("employability.resume.edit")}
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-4 p-6 md:grid-cols-4">
+        <div className="mb-6 grid grid-cols-2 gap-4 md:grid-cols-4">
           <div className="rounded-lg bg-muted p-4">
             <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary">
               {t("employability.resume.atsScore")}
@@ -111,7 +104,7 @@ export function ResumeAnalytics({
             </p>
           </div>
         </div>
-        <div className="px-6 pb-6">
+        <div>
           <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-text-secondary">
             {t("employability.resume.criticalImprovements")}
           </h4>
@@ -144,15 +137,10 @@ export function ResumeAnalytics({
             </div>
           ))}
         </div>
-      </div>
+      </SectionCard>
 
-      <div className="flex flex-col rounded-xl border border-border bg-surface">
-        <div className="border-b border-border p-6">
-          <h3 className="text-xl font-semibold leading-7 text-text">
-            {t("employability.liveTracking.title")}
-          </h3>
-        </div>
-        <div className="flex-1 space-y-1 overflow-y-auto p-4">
+      <SectionCard icon={Radio} label={t("employability.liveTracking.title")} variant="hero">
+        <div className="space-y-1">
           {applications.map((app) => (
             <div
               key={app.id}
@@ -179,13 +167,13 @@ export function ResumeAnalytics({
             </div>
           ))}
         </div>
-        <div className="border-t border-border p-4">
+        <div className="mt-4 border-t border-border pt-4">
           <button className="flex w-full cursor-pointer items-center justify-center gap-1 bg-transparent text-xs font-semibold tracking-wider text-text-secondary transition-all hover:text-primary">
             {t("employability.liveTracking.viewAll")}
             <ArrowRight className="h-3 w-3" />
           </button>
         </div>
-      </div>
+      </SectionCard>
     </section>
   );
 }

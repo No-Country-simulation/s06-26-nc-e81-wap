@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { TrendingUp, Clock, Target, Smile } from "lucide-react";
 import { Skeleton } from "@/shared/ui/Skeleton";
+import { SectionCard } from "@/shared/ui/SectionCard";
 import type {
   ProgressStatsProps,
   ProgressStats,
@@ -11,9 +12,9 @@ export function ProgressStats({ progress, isLoading }: ProgressStatsProps) {
 
   if (isLoading) {
     return (
-      <div className="rounded-xl border border-border bg-surface p-5">
+      <div className="rounded-xl bg-surface p-6 md:p-8">
         <div className="mb-4 flex items-center gap-2">
-          <TrendingUp className="h-4 w-4 text-text-secondary" />
+          <TrendingUp className="h-6 w-6 text-primary" />
           <Skeleton className="h-4 w-28" />
         </div>
         <div className="grid grid-cols-3 gap-4">
@@ -50,13 +51,7 @@ export function ProgressStats({ progress, isLoading }: ProgressStatsProps) {
   ];
 
   return (
-    <div className="flex h-full flex-col rounded-xl border border-border bg-surface p-5">
-      <div className="mb-4 flex items-center gap-2">
-        <TrendingUp className="h-4 w-4 text-primary" />
-        <p className="text-xs font-semibold uppercase tracking-wider text-primary">
-          {t("mentorship.progress")}
-        </p>
-      </div>
+    <SectionCard icon={TrendingUp} label={t("mentorship.progress")} variant="hero" className="flex h-full flex-col">
       <div className="flex flex-1 items-center">
         <div className="grid w-full grid-cols-3 gap-4">
           {stats.map((s) => {
@@ -78,6 +73,6 @@ export function ProgressStats({ progress, isLoading }: ProgressStatsProps) {
           })}
         </div>
       </div>
-    </div>
+    </SectionCard>
   );
 }
