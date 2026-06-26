@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { MirrorRound } from "lucide-react";
 import { Skeleton } from "@/shared/ui/Skeleton";
-import { DashboardCard } from "@/features/dashboard/components/DashboardCard";
+import { WidgetCard } from "@/shared/ui/WidgetCard";
 import { MOOD_EMOJI_LIST } from "@/features/mental-health/constants";
 import type { MoodWidgetProps } from "@/features/mental-health/types/mental-health.types";
 
@@ -20,7 +20,7 @@ export function MoodWidget({ averageMood, isLoading }: MoodWidgetProps) {
 
   if (averageMood === null) {
     return (
-      <DashboardCard icon={MirrorRound}>
+      <WidgetCard icon={MirrorRound}>
         <div className="flex h-full flex-col">
           <span className="mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
             {t("mental-health.mood.title")}
@@ -32,7 +32,7 @@ export function MoodWidget({ averageMood, isLoading }: MoodWidgetProps) {
             </p>
           </div>
         </div>
-      </DashboardCard>
+      </WidgetCard>
     );
   }
 
@@ -41,7 +41,7 @@ export function MoodWidget({ averageMood, isLoading }: MoodWidgetProps) {
   const emoji = MOOD_EMOJI_LIST[clampedMood - 1] ?? "🫤";
 
   return (
-    <DashboardCard icon={MirrorRound}>
+    <WidgetCard icon={MirrorRound}>
       <div className="flex h-full flex-col">
         <span className="mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
           {t("mental-health.mood.title")}
@@ -54,6 +54,6 @@ export function MoodWidget({ averageMood, isLoading }: MoodWidgetProps) {
           </p>
         </div>
       </div>
-    </DashboardCard>
+    </WidgetCard>
   );
 }

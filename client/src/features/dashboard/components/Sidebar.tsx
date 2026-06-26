@@ -39,7 +39,7 @@ export function Sidebar({ collapsed }: SidebarProps) {
         {!collapsed && (
           <div className="flex flex-col">
             <span className="font-heading text-lg font-bold text-text">
-              App BiT
+              Orienta360
             </span>
             <span className="text-[10px] leading-tight text-text-secondary">
               v{version}

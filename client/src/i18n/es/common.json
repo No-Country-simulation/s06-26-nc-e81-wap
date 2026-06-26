@@ -1,10 +1,10 @@
 {
   "app": {
-    "name": "App BiT",
-    "tagline": "Tu ecosistema de orientación personal"
+    "name": "Orienta360",
+    "tagline": "Tu ecosistema de orientación personal 360°"
   },
   "dashboard": {
-    "welcome": "Bienvenido a App BiT. Explora las secciones del menú para acceder a formación, empleabilidad, experiencias, mentorías y salud mental.",
+    "welcome": "Bienvenido a Orienta360. Explora las secciones del menú para acceder a formación, empleabilidad, experiencias, mentorías y salud mental.",
     "greeting": "Panel de {{name}}",
     "subtitle": "Aquí tienes un resumen de tu actividad en la plataforma.",
     "defaultName": "Usuario",
@@ -71,7 +71,7 @@
     "loginLink": "Inicia sesión",
     "onboarding": "Completar perfil",
     "onboardingSkip": "Omitir e ir al panel",
-    "heroTitle": "App BiT",
+    "heroTitle": "Orienta360",
     "heroDescription": "Tu próximo gran reto te espera. Descubre oportunidades, conecta con mentores y haz fluir tu talento sin límites.",
     "errorRequired": "Este campo es obligatorio",
     "errorEmail": "Correo electrónico inválido",
@@ -166,7 +166,9 @@
     "search-placeholder": "Busca en la plataforma...",
     "or": "o",
     "logout": "Cerrar sesión",
-    "profile": "Perfil"
+    "profile": "Perfil",
+    "continue": "Continuar",
+    "close": "Cerrar"
   },
   "training": {
     "currentPath": "Ruta Actual",
@@ -238,7 +240,7 @@
     "hero": {
       "badge": "Mindful Engineering",
       "title": "Mindful Engineering",
-      "description": "Optimiza tu rendimiento cognitivo y protege tu bienestar emocional. App bit integra herramientas de salud mental diseñadas específicamente para el flujo de trabajo del desarrollador.",
+      "description": "Optimiza tu rendimiento cognitivo y protege tu bienestar emocional. Orienta360 integra herramientas de salud mental diseñadas específicamente para el flujo de trabajo del desarrollador.",
       "startMeditation": "Iniciar meditación 5 min",
       "scheduleMeditation": "Programar meditación"
     },
@@ -269,7 +271,65 @@
       "mood3": "Regular",
       "mood4": "Bien",
       "mood5": "Excelente"
+    },
+    "salud": {
+      "title": "Orion — Tu Agente de Bienestar",
+      "subtitle": "He analizado tu estado de ánimo y tengo algo para ti.",
+      "message": "Mensaje de Orion",
+      "suggestion": "Acción sugerida",
+      "cvvWarning": "⚠️ Tu bienestar es lo primero",
+      "cvvMessage": "Notamos que hoy no ha sido un buen día. Si necesitas hablar con alguien, el CVV (Centro de Valorización de la Vida) está disponible 24h.",
+      "cvvButton": "Hablar con CVV"
     }
+  },
+  "experiences": {
+    "hero": {
+      "badge": "Experiencia Destacada",
+      "cta": "Ver historia completa"
+    },
+    "gallery": {
+      "title": "Experiencias en Video",
+      "subtitle": "Testimonios reales de profesionales que recorrieron el mismo camino.",
+      "empty": "No hay experiencias disponibles en esta categoría."
+    },
+    "filters": {
+      "all": "Todas",
+      "liderazgo": "Liderazgo",
+      "mujeres-en-tech": "Mujeres en Tech",
+      "cambio-de-carrera": "Cambio de Carrera",
+      "emprendimiento": "Emprendimiento",
+      "latam": "LATAM"
+    },
+    "events": {
+      "title": "Próximos Eventos",
+      "empty": "No hay eventos programados.",
+      "register": "Registrarme",
+      "recorded": "Evento realizado",
+      "attendees": "+{{count}} asistentes"
+    },
+    "widget": {
+      "participatedLabel": "HAS OBSERVADO",
+      "thisMonth": "Experiencias este mes.",
+      "videos": "Experiencias disponibles",
+      "noEvents": "No hay próximos eventos"
+    }
+  },
+  "mentorship": {
+    "notifications": "Actividad Reciente",
+    "notificationEmpty": "No hay actividad reciente",
+    "upcoming": "Próximas Sesiones",
+    "upcomingEmpty": "No tienes sesiones agendadas",
+    "cta": "Agendar Mentoría",
+    "progress": "Tu Progreso",
+    "sessionsCompleted": "Sesiones completadas",
+    "totalHours": "Horas totales",
+    "satisfactionRate": "Satisfacción",
+    "mentors": "Mentores Disponibles",
+    "mentorsEmpty": "No hay mentores disponibles por ahora",
+    "availableSlots": "{{count}} cupo disponible",
+    "availableSlots_plural": "{{count}} cupos disponibles",
+    "mentorAreas": "Áreas",
+    "tipTitle": "Tip del Día"
   },
   "employability": {
     "hero": {
@@ -353,5 +413,20 @@
       "apply": "Postularme",
       "noVacancies": "No hay vacantes disponibles en este momento."
     }
+  },
+  "orientation": {
+    "title": "Orion — Orientación 360°",
+    "description": "Analiza tu perfil profesional y descubre oportunidades alineadas con tus habilidades.",
+    "resultSubtitle": "Basado en tu perfil, Orion ha identificado lo siguiente:",
+    "loading": "Orion está procesando tu perfil...",
+    "analyzePrompt": "Haz clic en analizar para que Orion evalúe tu perfil y te muestre tu gap formativo, trayectoria sugerida y vacantes compatibles.",
+    "analyzeButton": "Analizar mi perfil con Orion",
+    "gap": "Gap formativo",
+    "gapRemaining": "por cubrir",
+    "gapItems": "Áreas de mejora",
+    "trajectory": "Trayectoria sugerida",
+    "vacancies": "Vacantes compatibles",
+    "confidence": "Confianza del análisis:",
+    "goToEmployability": "Ir a empleabilidad"
   }
 }

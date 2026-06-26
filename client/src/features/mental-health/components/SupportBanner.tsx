@@ -22,7 +22,7 @@ export function SupportBanner() {
               </p>
             </div>
           </div>
-          <Button variant="solid" size="sm" className="w-full sm:w-auto">
+          <Button variant="solid" size="sm" className="w-full sm:w-auto" onClick={() => window.open("https://www.cvv.org.br", "_blank")}>
             <Phone className="mr-1.5 h-4 w-4" />
             {t("mental-health.support.cta")}
           </Button>
