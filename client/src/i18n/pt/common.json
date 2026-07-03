@@ -1,0 +1,396 @@
+{
+  "app": {
+    "name": "Orienta360",
+    "tagline": "Seu ecossistema de orientação pessoal 360°"
+  },
+  "dashboard": {
+    "welcome": "Bem-vindo ao Orienta360. Explore as seções do menu para acessar formação, empregabilidade, experiências, mentorias e saúde mental.",
+    "greeting": "Painel de {{name}}",
+    "subtitle": "Aqui está um resumo da sua atividade na plataforma.",
+    "defaultName": "Usuário",
+    "error": "Erro ao carregar o painel",
+    "retry": "Tentar novamente",
+    "noHighlight": "Nenhuma experiência planejada ainda.",
+    "exploreExperiences": "Explorar experiências",
+    "highlightTag": "Próxima atividade",
+    "daysRemaining": "{{count}} dias restantes",
+    "noWidgetData": "Nenhum dado disponível ainda.",
+    "lists": {
+      "empleabilidad": "Candidaturas ativas",
+      "formacion": "Cursos concluídos",
+      "mentorias": "Próximas mentorias",
+      "viewAll": "Ver tudo",
+      "empty": "Nenhum dado disponível ainda."
+    },
+    "extra": {
+      "codewars": "Desafio",
+      "openCodewars": "Ir para Codewars",
+      "codewarsPrompt": "Se sente com ânimo para um desafio?",
+      "quoteOfTheDay": "Frase do dia",
+      "streak": "Sequência",
+      "streakCount_one": "{{count}} dia seguido",
+      "streakCount_other": "{{count}} dias seguidos"
+    },
+    "cta": {
+      "formacion": "Ir para formação",
+      "empleabilidad": "Ver candidaturas",
+      "experiencias": "Ver detalhes",
+      "mentorias": "Agendar mentoria",
+      "salud-mental": "Fazer check-in"
+    }
+  },
+  "nav": {
+    "dashboard": "Painel",
+    "formacion": "Formação",
+    "empleabilidad": "Empregabilidade",
+    "experiencias": "Experiências",
+    "mentorias": "Mentorias",
+    "salud-mental": "Saúde Mental"
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Criar conta",
+    "email": "E-mail",
+    "emailPlaceholder": "voce@email.com",
+    "password": "Senha",
+    "passwordPlaceholder": "••••••••",
+    "confirmPassword": "Confirmar senha",
+    "confirmPasswordPlaceholder": "Repita sua senha",
+    "name": "Nome completo",
+    "namePlaceholder": "Ex: João Silva",
+    "forgotPassword": "Esqueceu sua senha?",
+    "loginWithGoogle": "Entrar com Google",
+    "loginWithGithub": "Entrar com GitHub",
+    "registerWithGoogle": "Registrar com Google",
+    "registerWithGithub": "Registrar com GitHub",
+    "noAccount": "Não tem conta?",
+    "hasAccount": "Já tem conta?",
+    "registerLink": "Cadastre-se",
+    "loginLink": "Faça login",
+    "onboarding": "Completar perfil",
+    "onboardingSkip": "Pular para o painel",
+    "heroHeader": "Construa seu futuro",
+    "heroSubHeader": "em desenvolvimento",
+    "errorRequired": "Este campo é obrigatório",
+    "errorEmail": "E-mail inválido",
+    "heroDescription": "Seu próximo grande desafio espera por você. Descubra oportunidades, conecte-se com mentores e faça seu talento fluir sem limites.",
+    "errorPasswordMatch": "As senhas não coincidem",
+    "errorPasswordLength": "Mínimo 6 caracteres",
+    "comingSoon": "Em breve",
+    "featureCourses": "Prepare-se com os melhores cursos do mercado",
+    "featureJobs": "Candidate-se a ofertas reais de trabalho"
+  },
+  "onboarding": {
+    "title": "Complete seu perfil de desenvolvedor",
+    "subtitle": "Seu perfil te visualizará dentro do nosso ecossistema",
+    "step": "Passo",
+    "stepGenerales": "Gerais",
+    "stepUbicacion": "Sua localização",
+    "stepPerfil": "Seu perfil tecnológico",
+    "phone": "Telefone (WhatsApp)",
+    "selectOption": "Selecione...",
+    "dateOfBirth": "Data de Nascimento",
+    "gender": "Gênero",
+    "genderMale": "Masculino",
+    "genderFemale": "Feminino",
+    "genderNonBinary": "Não binário",
+    "genderOther": "Outro",
+    "education": "Escolaridade",
+    "educationHighSchool": "Ensino Médio",
+    "educationSomeCollege": "Ensino Superior Incompleto",
+    "educationBachelor": "Graduação",
+    "educationMaster": "Mestrado",
+    "educationDoctorate": "Doutorado",
+    "educationTechnical": "Curso Técnico / Tecnólogo",
+    "continent": "Continente",
+    "continentAmericas": "Américas",
+    "continentEurope": "Europa",
+    "continentAfrica": "África",
+    "continentAsia": "Ásia",
+    "continentOceania": "Oceania",
+    "country": "País",
+    "countryBR": "Brasil",
+    "countryAO": "Angola",
+    "countryAR": "Argentina",
+    "countryCL": "Chile",
+    "countryCO": "Colômbia",
+    "countryMX": "México",
+    "countryPE": "Peru",
+    "state": "Estado / Província",
+    "statePlaceholder": "Digite seu estado",
+    "city": "Cidade",
+    "cityPlaceholder": "Digite sua cidade",
+    "whatsapp": "WhatsApp (opcional)",
+    "level": "Nível Profissional",
+    "levelTrainee": "Trainee / Estagiário",
+    "levelJr": "Júnior",
+    "levelSsr": "Pleno",
+    "levelSr": "Sênior",
+    "levelLead": "Lead / Gerente",
+    "techArea": "Área de Tecnologia",
+    "techFrontend": "Frontend",
+    "techBackend": "Backend",
+    "techData": "Dados / Data Science",
+    "techMobile": "Mobile",
+    "techQa": "QA / Testes",
+    "techDevops": "DevOps / Cloud",
+    "techSecurity": "Segurança",
+    "techDesign": "UX / UI Design",
+    "techProduct": "Gestão de Produto",
+    "techOther": "Outra",
+    "goal": "O que você busca?",
+    "goalStudy": "Estudar e melhorar minhas habilidades",
+    "goalDefine": "Definir meu caminho profissional",
+    "goalFindJob": "Buscar emprego",
+    "goalChangeJob": "Mudar de emprego",
+    "errorRequired": "Este campo é obrigatório",
+    "stepPersonal": "Dados Pessoais",
+    "stepLocation": "Localização",
+    "stepProfessional": "Dados Profissionais",
+    "back": "Voltar",
+    "next": "Avançar",
+    "finish": "Finalizar"
+  },
+  "theme": {
+    "dark": "Escuro",
+    "light": "Claro"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "search": "Pesquisar",
+    "search-placeholder": "Pesquisar na plataforma...",
+    "or": "ou",
+    "logout": "Sair",
+    "profile": "Perfil",
+    "continue": "Continuar",
+    "close": "Fechar"
+  },
+  "training": {
+    "currentPath": "Rota Atual",
+    "courseTitle": "Sistemas Distribuídos Avançados",
+    "courseDescription": "Continue de onde parou: 'Consistência Eventual em Arquiteturas de Alta Escala'.",
+    "completed": "Concluído",
+    "modules": "Módulos",
+    "resumeLearning": "Retomar Aprendizado",
+    "learningActivity": "Atividade de Aprendizagem",
+    "dailyStreak": "Sequência Diária",
+    "days": "Dias",
+    "timeLearning": "Tempo de Estudo",
+    "hours": "horas",
+    "badgesEarned": "Distintivos Obtidos",
+    "viewStats": "Ver Estatísticas Detalhadas",
+    "catalogTitle": "Catálogo de Cursos",
+    "catalogSubtitle": "Explore rotas de engenharia especializadas selecionadas para seu perfil.",
+    "filters": {
+      "all": "Todas as Rotas",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "architecture": "Arquitetura"
+    },
+    "beginnerFriendly": "PARA INICIANTES",
+    "studyMaterials": "Materiais de Estudo",
+    "upcomingWorkshops": "Próximos Workshops ao Vivo",
+    "workshops": {
+      "attendees": "+{{count}} Participantes"
+    },
+    "noCourses": "Nenhum curso disponível nesta categoria.",
+    "viewAllEvents": "Ver Todos os Eventos"
+  },
+  "mental-health": {
+    "hero": {
+      "badge": "Mindful Engineering",
+      "title": "Mindful Engineering",
+      "description": "Otimize seu desempenho cognitivo e proteja seu bem-estar emocional. Orienta360 integra ferramentas de saúde mental projetadas especificamente para o fluxo de trabalho do desenvolvedor.",
+      "startMeditation": "Iniciar meditação 5 min",
+      "scheduleMeditation": "Agendar meditação"
+    },
+    "pomodoro": {
+      "title": "Pomodoro",
+      "work": "Foco",
+      "break": "Pausa",
+      "start": "Iniciar",
+      "pause": "Pausar",
+      "reset": "Reiniciar"
+    },
+    "mood": {
+      "title": "Estado Semanal",
+      "average": "Média de humor semanal",
+      "noData": "Nenhum registro de humor ainda"
+    },
+    "support": {
+      "title": "Apoio emocional 24/7",
+      "description": "Passando por um momento difícil? Nossos psicólogos especializados em tecnologia estão disponíveis para sessões anônimas.",
+      "cta": "Falar com um especialista"
+    },
+    "modal": {
+      "greeting": "Bem-vindo {{name}}",
+      "title": "Como você está se sentindo hoje?",
+      "subtitle": "Sua resposta é anônima e nos ajuda a oferecer as melhores opções para você.",
+      "mood1": "Muito mal",
+      "mood2": "Mal",
+      "mood3": "Regular",
+      "mood4": "Bem",
+      "mood5": "Excelente"
+    },
+    "salud": {
+      "title": "Orion — Seu Agente de Bem-Estar",
+      "subtitle": "Analisei seu estado de ânimo e tenho algo para você.",
+      "message": "Mensagem de Orion",
+      "suggestion": "Ação sugerida",
+      "cvvWarning": "⚠️ Seu bem-estar é primeiro",
+      "cvvMessage": "Percebemos que hoje não foi um bom dia. Se precisar conversar com alguém, o CVV (Centro de Valorização da Vida) está disponível 24h.",
+      "cvvButton": "Falar com CVV"
+    }
+  },
+  "experiences": {
+    "hero": {
+      "badge": "Experiência em Destaque",
+      "cta": "Ver história completa"
+    },
+    "gallery": {
+      "title": "Experiências em Vídeo",
+      "subtitle": "Depoimentos reais de profissionais que trilharam o mesmo caminho.",
+      "empty": "Nenhuma experiência disponível nesta categoria."
+    },
+    "filters": {
+      "all": "Todas",
+      "liderazgo": "Liderança",
+      "mujeres-en-tech": "Mulheres em Tech",
+      "cambio-de-carrera": "Mudança de Carreira",
+      "emprendimiento": "Empreendedorismo",
+      "latam": "LATAM"
+    },
+    "events": {
+      "title": "Próximos Eventos",
+      "empty": "Nenhum evento programado.",
+      "register": "Inscrever-me",
+      "recorded": "Evento realizado",
+      "attendees": "+{{count}} participantes"
+    },
+    "widget": {
+      "participatedLabel": "VOCÊ ASSISTIU",
+      "thisMonth": "Experiências este mês.",
+      "videos": "Experiências disponíveis",
+      "noEvents": "Nenhum próximo evento"
+    }
+  },
+  "mentorship": {
+    "notifications": "Atividade Recente",
+    "notificationEmpty": "Nenhuma atividade recente",
+    "upcoming": "Próximas Sessões",
+    "upcomingEmpty": "Você não tem sessões agendadas",
+    "cta": "Agendar Mentoria",
+    "progress": "Seu Progresso",
+    "sessionsCompleted": "Sessões concluídas",
+    "totalHours": "Horas totais",
+    "satisfactionRate": "Satisfação",
+    "mentors": "Mentores Disponíveis",
+    "mentorsEmpty": "Nenhum mentor disponível no momento",
+    "availableSlots": "{{count}} vaga disponível",
+    "availableSlots_plural": "{{count}} vagas disponíveis",
+    "mentorAreas": "Áreas",
+    "tipTitle": "Dica do Dia"
+  },
+  "employability": {
+    "hero": {
+      "title": "Eleve Sua Carreira",
+      "description": "Descubra oportunidades alinhadas ao seu perfil e feche a lacuna para seu próximo emprego.",
+      "mockInterview": "Iniciar Entrevista Simulada",
+      "uploadResume": "Enviar CV",
+      "readinessScore": "Pontuação de Preparo",
+      "profileStrength": "Força do Perfil"
+    },
+    "resume": {
+      "title": "Análise de CV",
+      "lastUpdated": "Última atualização: há 2 dias",
+      "edit": "Editar CV",
+      "atsScore": "Pontuação ATS",
+      "readability": "Legibilidade",
+      "high": "Alta",
+      "keywords": "Palavras-chave",
+      "match": "Correspondência",
+      "impact": "Impacto",
+      "optimal": "Ótimo",
+      "criticalImprovements": "Melhorias Críticas",
+      "quantifyTitle": "Quantifique Suas Conquistas",
+      "quantifyDesc": "Adicione métricas à sua experiência na 'Tech Solutions'. Use porcentagens ou números concretos.",
+      "missingSkillsTitle": "Habilidades Técnicas Faltantes",
+      "missingSkillsDesc": "Considere adicionar Kubernetes e GraphQL com base no seu histórico de projetos."
+    },
+    "liveTracking": {
+      "title": "Acompanhamento ao Vivo",
+      "status": {
+        "interview": "Entrevista",
+        "applied": "Inscrito",
+        "closed": "Fechado"
+      },
+      "app1": {
+        "title": "Engenheiro Frontend Sênior",
+        "company": "Google • Zurique, CH",
+        "status": "Entrevista",
+        "date": "Próximo: Entrevista Presencial (12 de Junho)"
+      },
+      "app2": {
+        "title": "Desenvolvedor Full Stack",
+        "company": "Stripe • Remoto",
+        "status": "Inscrito",
+        "date": "Enviado há 4 dias"
+      },
+      "app3": {
+        "title": "Gerente de Engenharia",
+        "company": "Airbnb • Berlim, DE",
+        "status": "Fechado",
+        "date": "Posição preenchida"
+      },
+      "viewAll": "Ver Todas as Inscrições"
+    },
+    "training": {
+      "title": "Treinamento para Entrevistas",
+      "subtitle": "Simulação com IA e recursos de especialistas.",
+      "explore": "Explorar Catálogo",
+      "behavioral": {
+        "title": "Marcos Comportamentais",
+        "description": "Domine o método STAR para perguntas de liderança e resolução de conflitos.",
+        "tag": "Novo",
+        "duration": "45 min • Intermediário"
+      },
+      "systemDesign": {
+        "title": "Imersão em Design de Sistemas",
+        "description": "Padrões de arquitetura para sistemas distribuídos de alta disponibilidade.",
+        "duration": "120 min • Avançado"
+      },
+      "frontend": {
+        "title": "Engenharia Frontend 101",
+        "description": "Conceitos básicos de manipulação do DOM, ciclos de renderização e otimização de desempenho.",
+        "duration": "60 min • Iniciante"
+      }
+    },
+    "vacancies": {
+      "title": "Vagas Compatíveis",
+      "subtitle": "Ofertas alinhadas ao seu perfil profissional. Feche a lacuna e aumente seu match.",
+      "matchLabel": "Match",
+      "gapLabel": "Falta",
+      "apply": "Candidatar",
+      "noVacancies": "Nenhuma vaga disponível no momento."
+    }
+  },
+  "orientation": {
+    "title": "Orion — Orientação 360°",
+    "description": "Analise seu perfil profissional e descubra oportunidades alinhadas com suas habilidades.",
+    "resultSubtitle": "Com base no seu perfil, a Orion identificou o seguinte:",
+    "loading": "Orion está processando seu perfil...",
+    "analyzePrompt": "Clique em analisar para que a Orion avalie seu perfil e mostre seu gap formativo, trajetória sugerida e vagas compatíveis.",
+    "analyzeButton": "Analisar meu perfil com Orion",
+    "gap": "Gap formativo",
+    "gapRemaining": "a cobrir",
+    "gapItems": "Áreas de melhoria",
+    "trajectory": "Trajetória sugerida",
+    "vacancies": "Vagas compatíveis",
+    "confidence": "Confiança da análise:",
+    "goToEmployability": "Ir para empregabilidade"
+  }
+}
