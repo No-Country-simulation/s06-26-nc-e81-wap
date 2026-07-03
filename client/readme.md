@@ -1,5 +1,53 @@
 # Orienta360 — Frontend
 
+**v1.0.0** | MIT License © 2026 @fhdzleon
+
+Ecosistema de orientación personal con IA: formación, empleabilidad y salud mental en un solo lugar.
+
+## Funcionalidades
+
+### 🧭 Orientar (agente IA)
+Analiza el perfil profesional contra el mercado real, muestra el gap porcentual y recomienda una trayectoria concreta para cerrarlo — con cursos, vacantes compatibles y recursos.
+
+### ❤️ Salud (check-in emocional)
+Check-in diario con un emoji. El agente IA interpreta el estado emocional y sugiere acciones humanas (podcast, caminata, lectura). En situaciones de crisis (nota < 4), deriva automáticamente al CVV.
+
+### Resto del ecosistema
+Formaciones personalizadas, match de empleabilidad con gap visible, mentorías con networking humanizado y experiencias estructurantes con testimonios reales.
+
+## Inicio rápido
+
+```bash
+git clone <repo-url>
+cd client
+npm install
+npm run dev
+```
+
+Abre `http://localhost:5173` — todo funciona con mocks, sin backend necesario.
+
+## Backend-agnostic
+
+Todo el frontend funciona con mocks en `src/services/api/*.api.ts`. Cada archivo devuelve data mockeada con los mismos tipos que esperaría un backend real.
+
+Para conectar un backend real:
+
+1. Crear o editar `.env`:
+```
+VITE_API_URL=http://localhost:8080
+```
+2. Reemplazar el contenido de los archivos `*.api.ts` por llamadas HTTP usando el `httpClient` compartido.
+3. Los tipos están en `types/` y son compartidos entre mocks y backend real.
+
+## Scripts
+
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Desarrollo con HMR |
+| `npm run build` | Build producción en `dist/` |
+| `npm run preview` | Previsualizar build local |
+| `npm run lint` | ESLint |
+
 ## Stack
 
 | Herramienta | Versión |
@@ -40,7 +88,7 @@ client/src/
 ├── services/            # 🌐 Comunicación con el back
 │   ├── http-client.ts   #   Única instancia de Axios
 │   ├── query-client.tsx #   Único QueryClientProvider
-│   └── api/             #   Endpoints por dominio
+│   └── api/             #   Endpoints por dominio (mocks)
 ├── i18n/                # 🌍 es (default), pt, en
 ├── store/               # 🗄️ Zustand
 │   ├── auth.store.ts
@@ -51,20 +99,11 @@ client/src/
 
 ## Principios
 
-- **Backend-agnostic**: `pages/` es la única capa que importa de `services/`. El resto del código (features, shared) recibe datos por props y no depende del backend.
-- **Single instances**: un solo `axios.create()` en `http-client.ts` y un solo `QueryClient` en `query-client.tsx`.
-- **i18n**: detección del lenguaje del navegador + selector manual. Español como default. Soporte: ES, PT, EN.
-- **Global state**: Zustand para auth y UI (sidebar). No para datos de API.
-- **Design system**: oscuro inspirado en wongola — fondo `#151515`, acento `#888888`, texto `#ffffff`, tipografía Lato.
-
-## Scripts
-
-```bash
-npm run dev        # Desarrollo
-npm run build      # Build producción
-npm run preview    # Preview del build
-npm run lint       # ESLint
-```
+- **Backend-agnostic**: `pages/` es la única capa que importa de `services/`. El resto recibe datos por props.
+- **Single instances**: un solo `axios.create()` en `http-client.ts` y un solo `QueryClient`.
+- **i18n**: detección del navegador + selector manual. ES default, soporte PT y EN.
+- **Zustand**: solo auth y UI. Los datos de API no pasan por store.
+- **Design system**: oscuro — fondo `#151515`, acento `#888888`, texto `#ffffff`, tipografía Lato.
 
 ## Ramas
 
@@ -86,3 +125,7 @@ Ejemplos:
 - `feat(auth): add login page`
 - `fix(dashboard): resolve layout bug`
 - `chore(setup): initial project scaffolding`
+
+## Licencia
+
+MIT © 2026 @fhdzleon — ver [LICENSE](./LICENSE)
