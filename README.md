@@ -1,4 +1,4 @@
-# S06-26-NC-E81-WAP — App BiT
+# S06-26-NC-E81-WAP
 
 # App de Orientación Personal con IA — Orienta360 (B2C)
 
@@ -35,9 +35,6 @@ No es solo una app de empleos. No es solo una plataforma de cursos. Tampoco es s
 
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/) [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/projects/spring-boot) [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io/) [![Render](https://img.shields.io/badge/Render-0A191E?style=for-the-badge&logo=render&logoColor=white)](https://render.com) [![Cloudinary](https://img.shields.io/badge/Cloudinary-3438C5?style=for-the-badge&logo=cloudinary&logoColor=white)](https://cloudinary.com)
 
-
-> **Nota:** QA usa Trello para la gestión de tareas y **TestRail** para la elaboracion de casos de prueba.
-
 ## 📁 Estructura del repositorio
 
 - `/client` — Frontend en **Vite + React 19 + TypeScript + Tailwind CSS v4**.
@@ -49,15 +46,15 @@ No es solo una app de empleos. No es solo una plataforma de cursos. Tampoco es s
 
 ## 👥 Equipo del proyecto
 
-Somos un equipo de 4 colaboradores:
-- 2 desarrolladores backend
-- 1 desarrollador frontend
-- 1 QA
+Somos un equipo de 5 colaboradores:
+- 1 desarrolladores backend
+- 3 desarrollador frontend
+- 1 Proyect manhager
 
 
 ## 🤵‍♂️Equipo [🔝](#readme-for--restify-app-)
 
-### Power Manager
+### Proyect Manager
 
 |![Avatar](https://avatars.githubusercontent.com/u/69812733?s=96&v=4) |
 |:-:|
@@ -71,12 +68,12 @@ Somos un equipo de 4 colaboradores:
 |**Felipe Hernandez**|
 | [![Github Link](https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white 'Github Link')](https://github.com/fhdzleon) [![LinkedIn Link](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=fff 'LinkedIn Link')](https://www.linkedin.com/in/fhdzleon/ ) |
 
-| ![Avatar](https://avatars.githubusercontent.com/u/27285030?s=96&v=4) |
+ ![Avatar](https://avatars.githubusercontent.com/u/27285030?s=96&v=4) |
 |:-:|
 |**John Alexander Cotamo**|
 | [![Github Link](https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white 'Github Link')](https://github.com/cotamo1901) [![LinkedIn Link](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=fff 'LinkedIn Link')](https://www.linkedin.com/ ) |
 
-| ![Avatar](https://avatars.githubusercontent.com/u/219472503?s=96&v=4) |
+ ![Avatar](https://avatars.githubusercontent.com/u/219472503?s=96&v=4) |
 |:-:|
 |**Cristian Hernandez**|
 | [![Github Link](https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white 'Github Link')](https://github.com/cristorreshrdez) [![LinkedIn Link](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin-white&logoColor=fff 'LinkedIn Link')](https://www.linkedin.com ) |
